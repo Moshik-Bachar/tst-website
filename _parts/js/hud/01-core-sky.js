@@ -47,9 +47,10 @@
     const st = { w: 0, h: 0, dpr: 1, t: 0, running: false, visible: false, raf: 0, last: 0 };
     const api = setup(ctx, st, canvas);
     function resize() {
-      const r = canvas.getBoundingClientRect();
-      if (r.width < 2 || r.height < 2) return;
-      st.w = r.width; st.h = r.height;
+      /* layout size, not the transformed box: the hero panel scales in during its entrance */
+      const cw = canvas.clientWidth, ch = canvas.clientHeight;
+      if (cw < 2 || ch < 2) return;
+      st.w = cw; st.h = ch;
       st.dpr = Math.min(window.devicePixelRatio || 1, DPR_CAP);
       canvas.width = Math.round(st.w * st.dpr);
       canvas.height = Math.round(st.h * st.dpr);
@@ -57,11 +58,13 @@
       if (api.resize) api.resize();
       api.draw(0);
     }
+    let tick = 0;
     function frame(now) {
       if (!st.running) return;
       const dt = Math.min(0.05, (now - st.last) / 1000 || 0.016);
       st.last = now; st.t += dt;
-      api.draw(dt);
+      if ((++tick & 63) === 0 && (canvas.clientWidth !== st.w || canvas.clientHeight !== st.h)) resize();
+      try { api.draw(dt); } catch (e) { /* never let one bad frame kill the instrument */ }
       st.raf = requestAnimationFrame(frame);
     }
     function start() { if (st.running || reduce) return; st.running = true; st.last = performance.now(); st.raf = requestAnimationFrame(frame); }
