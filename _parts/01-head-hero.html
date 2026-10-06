@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--
+  TST · The Squadron Technology — site shell
+  TODO before launch: replace every https://www.example.co.il/ with the production domain
+  (canonical, og:url, JSON-LD, sitemap.xml, robots.txt) and set TST_CONFIG below.
+-->
+<title>TST · The Squadron Technology — מאמני טיסה ומרכזי אימון</title>
+<meta name="description" content="TST מתכננת, מקימה, מפתחת ומפעילה מאמני טיסה ומרכזי אימון לחילות אוויר ולגופי הכשרה. שמונה שנות הפעלה, מאות אלפי גיחות אימון ו-99.7% זמינות.">
+<link rel="canonical" href="https://www.example.co.il/">
+<link rel="alternate" hreflang="en" href="https://www.example.co.il/">
+<link rel="alternate" hreflang="he" href="https://www.example.co.il/he/">
+<link rel="alternate" hreflang="x-default" href="https://www.example.co.il/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#070b10">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="TST · The Squadron Technology">
+<meta property="og:title" content="TST · מאמני טיסה ומרכזי אימון">
+<meta property="og:description" content="ניסיון מבצעי + טכנולוגיה מתקדמת + אמינות מוכחת = מוכנות למשימה. מערך אימון שלם מספק אחד, לאורך כל חייו.">
+<meta property="og:url" content="https://www.example.co.il/">
+<meta property="og:image" content="https://www.example.co.il/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TST · מאמני טיסה ומרכזי אימון">
+<meta name="twitter:description" content="מערך אימון שלם מספק אחד: תכנון, הקמה, פיתוח המאמן, הפעלה ואחזקה, הדרכה.">
+<meta name="twitter:image" content="https://www.example.co.il/assets/img/og-image.png">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script>
+/* Site configuration — the only values an integrator needs to touch. */
+window.TST_CONFIG = {
+  gaMeasurementId: '',      /* e.g. 'G-XXXXXXXXXX'. Empty = analytics disabled. */
+  requireConsent: true,     /* Ask before loading GA (Consent Mode v2). */
+  formEndpoint: ''          /* e.g. 'https://formspree.io/f/xxxx' or your own API. Empty = demo mode. */
+};
+/* Mark JS availability before first paint so reveal states never flash. Self-heals if a script fails to run. */
+document.documentElement.classList.add('js');
+setTimeout(function(){ if(!window.__tstReady){ document.documentElement.classList.remove('js'); } }, 3000);
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.example.co.il/#organization",
+      "name": "TST - The Squadron Technology",
+      "alternateName": "TST",
+      "url": "https://www.example.co.il/",
+      "logo": "https://www.example.co.il/assets/img/logo.svg",
+      "email": "info@example.co.il",
+      "telephone": "+972-3-000-0000",
+      "description": "תכנון, הקמה, פיתוח, הפעלה והדרכה של מאמני טיסה ומרכזי אימון לחילות אוויר ולגופי הכשרה.",
+      "address": { "@type": "PostalAddress", "addressCountry": "IL" },
+      "areaServed": "Worldwide",
+      "knowsAbout": ["Flight simulators", "Flight training centers", "Mixed reality training", "Instructor operating stations"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.example.co.il/#website",
+      "url": "https://www.example.co.il/",
+      "name": "TST · The Squadron Technology",
+      "inLanguage": "he-IL",
+      "publisher": { "@id": "https://www.example.co.il/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.example.co.il/#webpage",
+      "url": "https://www.example.co.il/",
+      "name": "TST · מאמני טיסה ומרכזי אימון",
+      "isPartOf": { "@id": "https://www.example.co.il/#website" },
+      "about": { "@id": "https://www.example.co.il/#organization" },
+      "inLanguage": "he-IL"
+    },
+    {
+      "@type": "Service",
+      "name": "מערך אימון שלם מספק אחד",
+      "provider": { "@id": "https://www.example.co.il/#organization" },
+      "serviceType": "Flight simulator and training center lifecycle services",
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "שלבי המערך",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "תכנון", "description": "תכנון אדריכלי ותפקודי של מרכז האימון לפי הדרישה ההדרכתית." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "הקמה", "description": "הקמת סביבת האימון ושילוב מערכות מחשוב ותקשורת, בעמידה בדרישות התקינה." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "פיתוח המאמן", "description": "מאמן מותאם לכלי הטיס ולתצורה הייחודית של הלקוח." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "הפעלה ואחזקה", "description": "ניהול תצורה, אחזקה ותמיכה תפעולית לאורך כל חיי המערכת." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "הדרכה", "description": "תפיסות הדרכה ומדריכים בכירים, מרמת הטייס הבודד ועד הצוות." } }
+        ]
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "מאמן Grob G-120",
+      "category": "Flight simulator",
+      "description": "מאמן למטוס ההדרכה הבסיסי, שבו כל טייס מתחיל את דרכו.",
+      "brand": { "@id": "https://www.example.co.il/#organization" }
+    },
+    {
+      "@type": "Product",
+      "name": "מאמן Beechcraft Bonanza",
+      "category": "Flight simulator",
+      "description": "מאמן למטוס ההדרכה של מסלול התובלה והמודיעין, עם תא טייס בתצורה הישראלית, מערכת תצוגה היקפית ועמדת מדריך.",
+      "brand": { "@id": "https://www.example.co.il/#organization" }
+    },
+    {
+      "@type": "Product",
+      "name": "מאמן F-16",
+      "category": "Flight simulator",
+      "description": "התאמת הפלטפורמה למטוס קרב: תא טייס נאמן למקור, שילוב המערכות הייחודיות של הלקוח ומודל טיסה מדויק.",
+      "brand": { "@id": "https://www.example.co.il/#organization" }
+    },
+    {
+      "@type": "Product",
+      "name": "מאמן F-35",
+      "category": "Flight simulator",
+      "description": "אימון בתצורה המבצעית המלאה: מערכת תצוגה היקפית, מציאות מעורבת ועמדת מדריך, בהתאמה לתצורת הלקוח.",
+      "brand": { "@id": "https://www.example.co.il/#organization" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">דילוג לתוכן הראשי</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span class="progress__bar" data-progress></span></div>
+
+<!-- Altimeter: scroll position as altitude (12,500 ft at the top of the page, touchdown at the footer).
+     Section waypoints on the tape are real links. Desktop only; phones keep the thin progress bar. -->
+<nav class="altimeter" aria-label="מד גובה: ניווט בין חלקי העמוד" data-altimeter>
+  <span class="altimeter__cap" aria-hidden="true">ALT · FT</span>
+  <div class="altimeter__window">
+    <div class="altimeter__strip" data-alt-strip></div>
+  </div>
+  <div class="altimeter__readout" aria-hidden="true"><b data-alt-value>12,500</b><small>FT</small></div>
+  <span class="altimeter__sec" aria-hidden="true" data-alt-section>00 · TST</span>
+</nav>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav" data-nav>
+  <div class="nav__inner">
+    <a class="logo" href="#top" aria-label="TST — The Squadron Technology, לדף הבית">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-opacity=".35"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-opacity=".55"/><path d="M16 1.5V7M16 25v5.5M1.5 16H7M25 16h5.5" stroke="currentColor"/><path class="logo__sweep" d="M16 16L28.5 9" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="1.8" fill="currentColor"/></svg>
+      </span>
+      <span class="logo__text" dir="ltr"><b>TST</b><small>THE SQUADRON TECHNOLOGY</small></span>
+    </a>
+    <nav class="nav__links" aria-label="ניווט ראשי">
+      <ul>
+        <li><a href="#solution" data-nav-link><span class="nav__idx" aria-hidden="true">01</span>הפתרון</a></li>
+        <li><a href="#trainers" data-nav-link><span class="nav__idx" aria-hidden="true">02</span>המאמנים שלנו</a></li>
+        <li><a href="#tech" data-nav-link><span class="nav__idx" aria-hidden="true">03</span>טכנולוגיה</a></li>
+        <li><a href="#availability" data-nav-link><span class="nav__idx" aria-hidden="true">04</span>זמינות</a></li>
+        <li><a href="#team" data-nav-link><span class="nav__idx" aria-hidden="true">05</span>הצוות</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <div class="lang" role="group" aria-label="שפה">
+        <a class="lang__opt" href="@@EN_HREF@@" hreflang="en" lang="en"@@EN_CUR@@ data-track="lang_switch" data-label="en">English</a>
+        <a class="lang__opt" href="@@HE_HREF@@" hreflang="he" lang="he"@@HE_CUR@@ data-track="lang_switch" data-label="he">עברית</a>
+      </div>
+      <a class="btn btn--primary btn--sm" href="#contact" data-track="cta_click" data-label="nav_contact">צרו קשר</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="פתיחת תפריט" data-label-open="פתיחת תפריט" data-label-close="סגירת תפריט" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu" id="menu" hidden data-menu>
+  <div class="menu__inner">
+    <nav aria-label="ניווט נייד">
+      <ol class="menu__links">
+        <li><a href="#solution" data-menu-link><span aria-hidden="true">01</span>הפתרון</a></li>
+        <li><a href="#trainers" data-menu-link><span aria-hidden="true">02</span>המאמנים שלנו</a></li>
+        <li><a href="#tech" data-menu-link><span aria-hidden="true">03</span>טכנולוגיה</a></li>
+        <li><a href="#availability" data-menu-link><span aria-hidden="true">04</span>זמינות</a></li>
+        <li><a href="#team" data-menu-link><span aria-hidden="true">05</span>הצוות</a></li>
+        <li><a href="#contact" data-menu-link><span aria-hidden="true">06</span>צרו קשר</a></li>
+      </ol>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--primary" href="#contact" data-menu-link data-track="cta_click" data-label="menu_demo">תיאום הדגמה</a>
+      <div class="lang lang--menu" role="group" aria-label="שפה">
+        <a class="lang__opt" href="@@EN_HREF@@" hreflang="en" lang="en"@@EN_CUR@@ data-track="lang_switch" data-label="en">English</a>
+        <a class="lang__opt" href="@@HE_HREF@@" hreflang="he" lang="he"@@HE_CUR@@ data-track="lang_switch" data-label="he">עברית</a>
+      </div>
+      <p class="menu__direct"><span>דואר אלקטרוני</span><a href="mailto:info@example.co.il" dir="ltr" data-track="contact_click" data-label="email">info@example.co.il</a></p>
+      <p class="menu__direct"><span>טלפון</span><a href="tel:+97230000000" dir="ltr" data-track="contact_click" data-label="phone">03-000-0000</a></p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-hero>
+  <canvas class="hero__sky" data-sky aria-hidden="true"></canvas>
+  <div class="hero__scrim" aria-hidden="true"></div>
+
+  <div class="hero__inner container">
+    <div class="hero__copy">
+      <p class="eyebrow hero__eyebrow" data-hero-item>
+        <span class="eyebrow__idx" dir="ltr" aria-hidden="true" data-scramble>TST // 00</span>
+        <span class="eyebrow__label">מאמני טיסה ומרכזי אימון</span>
+      </p>
+
+      <!-- Target designator that locks onto the headline (decorative) -->
+      <div class="lock" aria-hidden="true" data-lock>
+        <i></i><i></i><i></i><i></i>
+        <span class="lock__label" data-lock-label>TGT LOCK</span>
+      </div>
+
+      <h1 class="formula">
+        <span class="formula__line" data-hero-item><i aria-hidden="true">+</i><span>ניסיון מבצעי</span></span>
+        <span class="formula__line" data-hero-item><i aria-hidden="true">+</i><span>טכנולוגיה מתקדמת</span></span>
+        <span class="formula__line" data-hero-item><i aria-hidden="true">+</i><span>אמינות מוכחת</span></span>
+        <span class="formula__rule" aria-hidden="true" data-hero-rule><i></i></span>
+        <span class="formula__result" data-hero-item>מוכנות למשימה.</span>
+      </h1>
+
+      <p class="lead hero__lead" data-hero-item>שמונה שנים של פיתוח, הקמה והפעלה של מאמני טיסה, ומאות אלפי גיחות אימון מאחורינו. עכשיו אנחנו מביאים את הניסיון הזה לחילות אוויר ולגופי הכשרה בישראל ובעולם.</p>
+
+      <div class="hero__ctas" data-hero-item>
+        <a class="btn btn--primary btn--lg" href="#contact" data-magnetic data-track="cta_click" data-label="hero_demo">
+          <span>תיאום הדגמה</span>
+          <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M19 12H5m0 0 6-6m-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="#trainers" data-magnetic data-track="cta_click" data-label="hero_trainers">המאמנים שלנו</a>
+      </div>
+
+      <dl class="hero__meta" data-hero-item>
+        <div><dt>ניסיון</dt><dd>שמונה שנים</dd></div>
+        <div><dt>ניסיון תפעולי</dt><dd>מאות אלפי גיחות</dd></div>
+        <div><dt>הנהגה</dt><dd>מי שהובילו את חיל האוויר</dd></div>
+      </dl>
+    </div>
+
+    <!-- Live instrument panel (decorative) -->
+    <div class="instrument" aria-hidden="true" data-hero-panel data-tilt>
+      <div class="instrument__frame"></div>
+      <div class="instrument__bar" dir="ltr">
+        <span class="instrument__status"><i class="pulse"></i><span data-scramble>RADAR · SCAN</span></span>
+        <span class="instrument__clock" data-clock>00:00:00Z</span>
+      </div>
+      <div class="instrument__screen">
+        <canvas class="instrument__radar" data-radar aria-hidden="true"></canvas>
+      </div>
+      <dl class="instrument__readouts" dir="ltr">
+        <div><dt>HDG</dt><dd data-readout="hdg">240</dd></div>
+        <div><dt>ALT</dt><dd data-readout="alt">12,500</dd></div>
+        <div><dt>SPD</dt><dd data-readout="spd">420</dd></div>
+        <div><dt>TGT</dt><dd data-readout="tgt">—</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <a class="hero__cue" href="#solution" data-hero-item aria-label="גלילה לתוכן">
+    <span>גלילה</span><i aria-hidden="true"></i>
+  </a>
+</section>
+
+<!-- ============ TICKER (decorative) ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track" data-ticker>
+    <span>מאמני טיסה</span><span>מרכזי אימון</span><span>תכנון</span><span>הקמה</span><span>פיתוח המאמן</span><span>הפעלה ואחזקה</span><span>הדרכה</span><span>מציאות מדומה ומעורבת</span><span dir="ltr">99.7% זמינות</span><span>שמונה שנות הפעלה</span><span>מאות אלפי גיחות אימון</span>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+<svg class="render__svg" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="direction:ltr">
+<line class="g" x1="40" y1="20" x2="40" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="80" y1="20" x2="80" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="120" y1="20" x2="120" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="160" y1="20" x2="160" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="200" y1="20" x2="200" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="240" y1="20" x2="240" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="280" y1="20" x2="280" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="320" y1="20" x2="320" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="360" y1="20" x2="360" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="400" y1="20" x2="400" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="440" y1="20" x2="440" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="480" y1="20" x2="480" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="520" y1="20" x2="520" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="560" y1="20" x2="560" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="20" x2="600" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="640" y1="20" x2="640" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="680" y1="20" x2="680" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="720" y1="20" x2="720" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="760" y1="20" x2="760" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="40" x2="760" y2="40" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="80" x2="760" y2="80" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="120" x2="760" y2="120" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="160" x2="760" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="200" x2="760" y2="200" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="240" x2="760" y2="240" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="280" x2="760" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="320" x2="760" y2="320" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="360" x2="760" y2="360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="400" x2="760" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="440" x2="760" y2="440" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="480" x2="760" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="400" y1="36" x2="400" y2="484" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="426,214 718,238 718,292 426,300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="374,214 82,238 82,292 374,300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="410,396 518,410 518,438 414,438" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="390,396 282,410 282,438 386,438" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="436" y1="288" x2="710" y2="282" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="364" y1="288" x2="90" y2="282" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="400,70 404.6,78 413.2,85.9 416.1,93.9 417.4,101.8 420.1,109.8 422.9,117.8 424.7,125.7 425.1,133.7 425.5,141.6 426.3,149.6 427.3,157.5 428.2,165.5 428.8,173.5 429,181.4 428.9,189.4 428.8,197.3 428.5,205.3 428.3,213.2 428,221.2 427.6,229.2 427.4,237.1 427.2,245.1 427,253 427,261 426.8,269 426.3,276.9 425.5,284.9 424.5,292.8 423.4,300.8 422.3,308.8 421.4,316.7 420.6,324.7 420.1,332.6 420,340.6 419.7,348.5 418.8,356.5 417.5,364.5 416.1,372.4 414.7,380.4 413.6,388.3 413.1,396.3 412.9,404.2 412.1,412.2 411,420.2 409.8,428.1 409.1,436.1 406.7,444 400,452 400,452 393.3,444 390.9,436.1 390.2,428.1 389,420.2 387.9,412.2 387.1,404.2 386.9,396.3 386.4,388.3 385.3,380.4 383.9,372.4 382.5,364.5 381.2,356.5 380.3,348.5 380,340.6 379.9,332.6 379.4,324.7 378.6,316.7 377.7,308.8 376.6,300.8 375.5,292.8 374.5,284.9 373.7,276.9 373.2,269 373,261 373,253 372.8,245.1 372.6,237.1 372.4,229.2 372,221.2 371.7,213.2 371.5,205.3 371.2,197.3 371.1,189.4 371,181.4 371.2,173.5 371.8,165.5 372.7,157.5 373.7,149.6 374.5,141.6 374.9,133.7 375.3,125.7 377.1,117.8 379.9,109.8 382.6,101.8 383.9,93.9 386.8,85.9 395.4,78 400,70" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s2" points="400,132 400.8,134.6 402.9,137.2 406,139.9 409.4,142.5 412.4,145.1 414.4,147.8 415,150.4 415.1,153 415.4,155.6 415.9,158.2 416.5,160.9 417.3,163.5 418.1,166.1 418.9,168.8 419.7,171.4 420.4,174 421.1,176.6 421.5,179.2 421.9,181.9 422,184.5 422,187.1 422,189.8 421.9,192.4 421.9,195 421.8,197.6 421.7,200.2 421.6,202.9 421.5,205.5 421.4,208.1 421.3,210.8 421.2,213.4 421.1,216 421.1,218.6 421,221.2 421,223.9 420.9,226.5 420.3,229.1 419.2,231.8 417.8,234.4 416.2,237 414.6,239.6 413.3,242.2 412.4,244.9 412,247.5 410.7,250.1 406.5,252.8 401.9,255.4 400,258 400,258 398.1,255.4 393.5,252.8 389.3,250.1 388,247.5 387.6,244.9 386.7,242.2 385.4,239.6 383.8,237 382.2,234.4 380.8,231.8 379.7,229.1 379.1,226.5 379,223.9 379,221.2 378.9,218.6 378.9,216 378.8,213.4 378.7,210.8 378.6,208.1 378.5,205.5 378.4,202.9 378.3,200.2 378.2,197.6 378.1,195 378.1,192.4 378,189.8 378,187.1 378,184.5 378.1,181.9 378.5,179.2 378.9,176.6 379.6,174 380.3,171.4 381.1,168.8 381.9,166.1 382.7,163.5 383.5,160.9 384.1,158.2 384.6,155.6 384.9,153 385,150.4 385.6,147.8 387.6,145.1 390.6,142.5 394,139.9 397.1,137.2 399.2,134.6 400,132" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="400" y1="136" x2="400" y2="254" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s3" x1="400" y1="372" x2="400" y2="452" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="d" cx="400" cy="70" r="58" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="400" cy="70" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="348" y1="70" x2="452" y2="70" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="82" y1="468" x2="718" y2="468" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="82" y1="460" x2="82" y2="476" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="718" y1="460" x2="718" y2="476" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="400" y="490" text-anchor="middle">SPAN</text>
+<line class="d" x1="720" y1="70" x2="720" y2="452" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="70" x2="728" y2="70" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="452" x2="728" y2="452" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="734" y="265" text-anchor="start">LENGTH</text>
+<text class="lbl" x="408" y="48" text-anchor="start">CL</text>
+<line class="s2" x1="64" y1="100" x2="76" y2="100" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="104" text-anchor="start">FS00</text>
+<line class="s2" x1="64" y1="160" x2="76" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="164" text-anchor="start">FS01</text>
+<line class="s2" x1="64" y1="220" x2="76" y2="220" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="224" text-anchor="start">FS02</text>
+<line class="s2" x1="64" y1="280" x2="76" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="284" text-anchor="start">FS03</text>
+<line class="s2" x1="64" y1="340" x2="76" y2="340" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="344" text-anchor="start">FS04</text>
+<line class="s2" x1="64" y1="400" x2="76" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="404" text-anchor="start">FS05</text>
+<line class="s" x1="24" y1="24" x2="42" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="24" x2="24" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="758" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="776" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="42" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="24" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="758" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="776" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+</svg>

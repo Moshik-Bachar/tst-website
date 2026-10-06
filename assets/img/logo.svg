@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" width="420" height="96">
+  <title>TST · The Squadron Technology</title>
+  <g fill="none" stroke="#5cc8ff" stroke-linecap="round">
+    <circle cx="48" cy="48" r="40" stroke-opacity=".35" stroke-width="2"/>
+    <circle cx="48" cy="48" r="24" stroke-opacity=".6" stroke-width="2"/>
+    <path d="M48 6v12M48 78v12M6 48h12M78 48h12" stroke-width="2"/>
+    <path d="M48 48L80 30" stroke="#9fe1ff" stroke-width="4"/>
+  </g>
+  <circle cx="48" cy="48" r="5" fill="#5cc8ff"/>
+  <text x="112" y="58" font-family="Heebo, Segoe UI, Arial, sans-serif" font-weight="800" font-size="46" letter-spacing="4" fill="#e8eef3">TST</text>
+  <line x1="236" y1="28" x2="236" y2="68" stroke="#1f2b37" stroke-width="2"/>
+  <text x="252" y="44" font-family="IBM Plex Mono, Consolas, monospace" font-size="13" letter-spacing="2.4" fill="#8b9aaa">THE SQUADRON</text>
+  <text x="252" y="64" font-family="IBM Plex Mono, Consolas, monospace" font-size="13" letter-spacing="2.4" fill="#8b9aaa">TECHNOLOGY</text>
+</svg>

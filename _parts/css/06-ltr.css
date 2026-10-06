@@ -1,0 +1,42 @@
+
+/* ---------- 20. LTR (English) overrides ----------
+   The stylesheet is written with logical properties, so most of the layout
+   mirrors itself. These rules cover the few physical values: gradients that
+   darken the text side, transform origins of growing bars, number alignment,
+   the marquee direction and the altimeter's mirrored anatomy. */
+html:not([dir="rtl"]) .hero__scrim {
+  background:
+    linear-gradient(90deg, rgba(7,11,16,.92) 0%, rgba(7,11,16,.72) 36%, rgba(7,11,16,.18) 68%, rgba(7,11,16,0) 100%),
+    linear-gradient(180deg, rgba(7,11,16,.35) 0%, rgba(7,11,16,0) 30%, rgba(7,11,16,0) 70%, var(--bg) 100%);
+}
+html:not([dir="rtl"]) .banner__scrim {
+  background:
+    linear-gradient(90deg, rgba(7,11,16,.97) 0%, rgba(7,11,16,.9) 30%, rgba(7,11,16,.45) 52%, rgba(7,11,16,0) 72%),
+    linear-gradient(180deg, rgba(7,11,16,.25), transparent 30%, transparent 75%, rgba(7,11,16,.5));
+}
+html:not([dir="rtl"]) .formula__rule i { transform-origin: left; background: linear-gradient(90deg, var(--accent), rgba(92,200,255,0)); }
+html:not([dir="rtl"]) .formula__result { font-size: clamp(40px, 5.2vw, 84px); letter-spacing: -.035em; }
+html:not([dir="rtl"]) .formula__line { letter-spacing: -.015em; }
+html:not([dir="rtl"]) .section__title::after { background: linear-gradient(90deg, var(--accent), transparent); }
+html:not([dir="rtl"]) .chain__track i { transform-origin: left; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+html:not([dir="rtl"]) .progress__bar { transform-origin: left; }
+html:not([dir="rtl"]) .stat__val { text-align: left; }
+html:not([dir="rtl"]) .ticker__track { animation-name: tickerLtr; }
+@keyframes tickerLtr { to { transform: translateX(-50%); } }
+html:not([dir="rtl"]) .nav__links a { font-size: 14.5px; letter-spacing: .01em; }
+html:not([dir="rtl"]) .menu__links a { font-size: clamp(28px, 7vw, 40px); }
+html:not([dir="rtl"]) .lead { font-weight: 400; }
+html:not([dir="rtl"]) .banner__text > p:not(.eyebrow) { font-weight: 400; }
+
+/* altimeter mirrored onto the right edge: axis on the right, labels and readout inward */
+html:not([dir="rtl"]) .altimeter__cap, html:not([dir="rtl"]) .altimeter__sec { text-align: right; }
+html:not([dir="rtl"]) .altimeter__window::after { left: auto; right: 0; }
+html:not([dir="rtl"]) .altimeter__strip {
+  background:
+    repeating-linear-gradient(to bottom, rgba(92,200,255,.6) 0 1px, transparent 1px 120px) right 0 top 0 / 14px 100% no-repeat,
+    repeating-linear-gradient(to bottom, rgba(150,180,205,.32) 0 1px, transparent 1px 24px) right 0 top 0 / 7px 100% no-repeat; }
+html:not([dir="rtl"]) .altimeter__strip > span { left: auto; right: 20px; }
+html:not([dir="rtl"]) .altimeter__mark { left: auto; right: 0; flex-direction: row; padding: 5px 0 5px 6px; }
+html:not([dir="rtl"]) .altimeter__readout { left: auto; right: 18px; }
+html:not([dir="rtl"]) .altimeter__readout::before { left: auto; right: -18px; }
+html:not([dir="rtl"]) .altimeter__readout::after { left: auto; right: -7px; border-right: 0; border-left: 6px solid var(--accent); }

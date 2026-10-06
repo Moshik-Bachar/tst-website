@@ -1,0 +1,1316 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--
+  TST · The Squadron Technology — site shell
+  TODO before launch: replace every https://moshik-bachar.github.io/tst-website/ with the production domain
+  (canonical, og:url, JSON-LD, sitemap.xml, robots.txt) and set TST_CONFIG below.
+-->
+<title>TST · The Squadron Technology — מאמני טיסה ומרכזי אימון</title>
+<meta name="description" content="TST מתכננת, מקימה, מפתחת ומפעילה מאמני טיסה ומרכזי אימון לחילות אוויר ולגופי הכשרה. שמונה שנות הפעלה, מאות אלפי גיחות אימון ו-99.7% זמינות.">
+<link rel="canonical" href="https://moshik-bachar.github.io/tst-website/he/">
+<link rel="alternate" hreflang="en" href="https://moshik-bachar.github.io/tst-website/">
+<link rel="alternate" hreflang="he" href="https://moshik-bachar.github.io/tst-website/he/">
+<link rel="alternate" hreflang="x-default" href="https://moshik-bachar.github.io/tst-website/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#070b10">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="TST · The Squadron Technology">
+<meta property="og:title" content="TST · מאמני טיסה ומרכזי אימון">
+<meta property="og:description" content="ניסיון מבצעי + טכנולוגיה מתקדמת + אמינות מוכחת = מוכנות למשימה. מערך אימון שלם מספק אחד, לאורך כל חייו.">
+<meta property="og:url" content="https://moshik-bachar.github.io/tst-website/he/">
+<meta property="og:image" content="https://moshik-bachar.github.io/tst-website/assets/img/og-image-he.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TST · מאמני טיסה ומרכזי אימון">
+<meta name="twitter:description" content="מערך אימון שלם מספק אחד: תכנון, הקמה, פיתוח המאמן, הפעלה ואחזקה, הדרכה.">
+<meta name="twitter:image" content="https://moshik-bachar.github.io/tst-website/assets/img/og-image-he.png">
+
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+<script>
+/* Site configuration — the only values an integrator needs to touch. */
+window.TST_CONFIG = {
+  gaMeasurementId: '',      /* e.g. 'G-XXXXXXXXXX'. Empty = analytics disabled. */
+  requireConsent: true,     /* Ask before loading GA (Consent Mode v2). */
+  formEndpoint: ''          /* e.g. 'https://formspree.io/f/xxxx' or your own API. Empty = demo mode. */
+};
+/* Mark JS availability before first paint so reveal states never flash. Self-heals if a script fails to run. */
+document.documentElement.classList.add('js');
+setTimeout(function(){ if(!window.__tstReady){ document.documentElement.classList.remove('js'); } }, 3000);
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://moshik-bachar.github.io/tst-website/#organization",
+      "name": "TST - The Squadron Technology",
+      "alternateName": "TST",
+      "url": "https://moshik-bachar.github.io/tst-website/",
+      "logo": "https://moshik-bachar.github.io/tst-website/assets/img/logo.svg",
+      "email": "info@example.co.il",
+      "telephone": "+972-3-000-0000",
+      "description": "תכנון, הקמה, פיתוח, הפעלה והדרכה של מאמני טיסה ומרכזי אימון לחילות אוויר ולגופי הכשרה.",
+      "address": { "@type": "PostalAddress", "addressCountry": "IL" },
+      "areaServed": "Worldwide",
+      "knowsAbout": ["Flight simulators", "Flight training centers", "Mixed reality training", "Instructor operating stations"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://moshik-bachar.github.io/tst-website/#website",
+      "url": "https://moshik-bachar.github.io/tst-website/",
+      "name": "TST · The Squadron Technology",
+      "inLanguage": "he-IL",
+      "publisher": { "@id": "https://moshik-bachar.github.io/tst-website/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://moshik-bachar.github.io/tst-website/#webpage",
+      "url": "https://moshik-bachar.github.io/tst-website/he/",
+      "name": "TST · מאמני טיסה ומרכזי אימון",
+      "isPartOf": { "@id": "https://moshik-bachar.github.io/tst-website/#website" },
+      "about": { "@id": "https://moshik-bachar.github.io/tst-website/#organization" },
+      "inLanguage": "he-IL"
+    },
+    {
+      "@type": "Service",
+      "name": "מערך אימון שלם מספק אחד",
+      "provider": { "@id": "https://moshik-bachar.github.io/tst-website/#organization" },
+      "serviceType": "Flight simulator and training center lifecycle services",
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "שלבי המערך",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "תכנון", "description": "תכנון אדריכלי ותפקודי של מרכז האימון לפי הדרישה ההדרכתית." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "הקמה", "description": "הקמת סביבת האימון ושילוב מערכות מחשוב ותקשורת, בעמידה בדרישות התקינה." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "פיתוח המאמן", "description": "מאמן מותאם לכלי הטיס ולתצורה הייחודית של הלקוח." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "הפעלה ואחזקה", "description": "ניהול תצורה, אחזקה ותמיכה תפעולית לאורך כל חיי המערכת." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "הדרכה", "description": "תפיסות הדרכה ומדריכים בכירים, מרמת הטייס הבודד ועד הצוות." } }
+        ]
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "מאמן Grob G-120",
+      "category": "Flight simulator",
+      "description": "מאמן למטוס ההדרכה הבסיסי, שבו כל טייס מתחיל את דרכו.",
+      "brand": { "@id": "https://moshik-bachar.github.io/tst-website/#organization" }
+    },
+    {
+      "@type": "Product",
+      "name": "מאמן Beechcraft Bonanza",
+      "category": "Flight simulator",
+      "description": "מאמן למטוס ההדרכה של מסלול התובלה והמודיעין, עם תא טייס בתצורה הישראלית, מערכת תצוגה היקפית ועמדת מדריך.",
+      "brand": { "@id": "https://moshik-bachar.github.io/tst-website/#organization" }
+    },
+    {
+      "@type": "Product",
+      "name": "מאמן F-16",
+      "category": "Flight simulator",
+      "description": "התאמת הפלטפורמה למטוס קרב: תא טייס נאמן למקור, שילוב המערכות הייחודיות של הלקוח ומודל טיסה מדויק.",
+      "brand": { "@id": "https://moshik-bachar.github.io/tst-website/#organization" }
+    },
+    {
+      "@type": "Product",
+      "name": "מאמן F-35",
+      "category": "Flight simulator",
+      "description": "אימון בתצורה המבצעית המלאה: מערכת תצוגה היקפית, מציאות מעורבת ועמדת מדריך, בהתאמה לתצורת הלקוח.",
+      "brand": { "@id": "https://moshik-bachar.github.io/tst-website/#organization" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">דילוג לתוכן הראשי</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span class="progress__bar" data-progress></span></div>
+
+<!-- Altimeter: scroll position as altitude (12,500 ft at the top of the page, touchdown at the footer).
+     Section waypoints on the tape are real links. Desktop only; phones keep the thin progress bar. -->
+<nav class="altimeter" aria-label="מד גובה: ניווט בין חלקי העמוד" data-altimeter>
+  <span class="altimeter__cap" aria-hidden="true">ALT · FT</span>
+  <div class="altimeter__window">
+    <div class="altimeter__strip" data-alt-strip></div>
+  </div>
+  <div class="altimeter__readout" aria-hidden="true"><b data-alt-value>12,500</b><small>FT</small></div>
+  <span class="altimeter__sec" aria-hidden="true" data-alt-section>00 · TST</span>
+</nav>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav" data-nav>
+  <div class="nav__inner">
+    <a class="logo" href="#top" aria-label="TST — The Squadron Technology, לדף הבית">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="none"><circle cx="16" cy="16" r="14.5" stroke="currentColor" stroke-opacity=".35"/><circle cx="16" cy="16" r="8.5" stroke="currentColor" stroke-opacity=".55"/><path d="M16 1.5V7M16 25v5.5M1.5 16H7M25 16h5.5" stroke="currentColor"/><path class="logo__sweep" d="M16 16L28.5 9" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="16" r="1.8" fill="currentColor"/></svg>
+      </span>
+      <span class="logo__text" dir="ltr"><b>TST</b><small>THE SQUADRON TECHNOLOGY</small></span>
+    </a>
+    <nav class="nav__links" aria-label="ניווט ראשי">
+      <ul>
+        <li><a href="#solution" data-nav-link><span class="nav__idx" aria-hidden="true">01</span>הפתרון</a></li>
+        <li><a href="#trainers" data-nav-link><span class="nav__idx" aria-hidden="true">02</span>המאמנים שלנו</a></li>
+        <li><a href="#tech" data-nav-link><span class="nav__idx" aria-hidden="true">03</span>טכנולוגיה</a></li>
+        <li><a href="#availability" data-nav-link><span class="nav__idx" aria-hidden="true">04</span>זמינות</a></li>
+        <li><a href="#team" data-nav-link><span class="nav__idx" aria-hidden="true">05</span>הצוות</a></li>
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <div class="lang" role="group" aria-label="שפה">
+        <a class="lang__opt" href="../index.html" hreflang="en" lang="en" data-track="lang_switch" data-label="en">English</a>
+        <a class="lang__opt" href="index.html" hreflang="he" lang="he" aria-current="page" data-track="lang_switch" data-label="he">עברית</a>
+      </div>
+      <a class="btn btn--primary btn--sm" href="#contact" data-track="cta_click" data-label="nav_contact">צרו קשר</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="פתיחת תפריט" data-label-open="פתיחת תפריט" data-label-close="סגירת תפריט" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu" id="menu" hidden data-menu>
+  <div class="menu__inner">
+    <nav aria-label="ניווט נייד">
+      <ol class="menu__links">
+        <li><a href="#solution" data-menu-link><span aria-hidden="true">01</span>הפתרון</a></li>
+        <li><a href="#trainers" data-menu-link><span aria-hidden="true">02</span>המאמנים שלנו</a></li>
+        <li><a href="#tech" data-menu-link><span aria-hidden="true">03</span>טכנולוגיה</a></li>
+        <li><a href="#availability" data-menu-link><span aria-hidden="true">04</span>זמינות</a></li>
+        <li><a href="#team" data-menu-link><span aria-hidden="true">05</span>הצוות</a></li>
+        <li><a href="#contact" data-menu-link><span aria-hidden="true">06</span>צרו קשר</a></li>
+      </ol>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--primary" href="#contact" data-menu-link data-track="cta_click" data-label="menu_demo">תיאום הדגמה</a>
+      <div class="lang lang--menu" role="group" aria-label="שפה">
+        <a class="lang__opt" href="../index.html" hreflang="en" lang="en" data-track="lang_switch" data-label="en">English</a>
+        <a class="lang__opt" href="index.html" hreflang="he" lang="he" aria-current="page" data-track="lang_switch" data-label="he">עברית</a>
+      </div>
+      <p class="menu__direct"><span>דואר אלקטרוני</span><a href="mailto:info@example.co.il" dir="ltr" data-track="contact_click" data-label="email">info@example.co.il</a></p>
+      <p class="menu__direct"><span>טלפון</span><a href="tel:+97230000000" dir="ltr" data-track="contact_click" data-label="phone">03-000-0000</a></p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-hero>
+  <canvas class="hero__sky" data-sky aria-hidden="true"></canvas>
+  <div class="hero__scrim" aria-hidden="true"></div>
+
+  <div class="hero__inner container">
+    <div class="hero__copy">
+      <p class="eyebrow hero__eyebrow" data-hero-item>
+        <span class="eyebrow__idx" dir="ltr" aria-hidden="true" data-scramble>TST // 00</span>
+        <span class="eyebrow__label">מאמני טיסה ומרכזי אימון</span>
+      </p>
+
+      <!-- Target designator that locks onto the headline (decorative) -->
+      <div class="lock" aria-hidden="true" data-lock>
+        <i></i><i></i><i></i><i></i>
+        <span class="lock__label" data-lock-label>TGT LOCK</span>
+      </div>
+
+      <h1 class="formula">
+        <span class="formula__line" data-hero-item><i aria-hidden="true">+</i><span>ניסיון מבצעי</span></span>
+        <span class="formula__line" data-hero-item><i aria-hidden="true">+</i><span>טכנולוגיה מתקדמת</span></span>
+        <span class="formula__line" data-hero-item><i aria-hidden="true">+</i><span>אמינות מוכחת</span></span>
+        <span class="formula__rule" aria-hidden="true" data-hero-rule><i></i></span>
+        <span class="formula__result" data-hero-item>מוכנות למשימה.</span>
+      </h1>
+
+      <p class="lead hero__lead" data-hero-item>שמונה שנים של פיתוח, הקמה והפעלה של מאמני טיסה, ומאות אלפי גיחות אימון מאחורינו. עכשיו אנחנו מביאים את הניסיון הזה לחילות אוויר ולגופי הכשרה בישראל ובעולם.</p>
+
+      <div class="hero__ctas" data-hero-item>
+        <a class="btn btn--primary btn--lg" href="#contact" data-magnetic data-track="cta_click" data-label="hero_demo">
+          <span>תיאום הדגמה</span>
+          <svg class="btn__arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M19 12H5m0 0 6-6m-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="#trainers" data-magnetic data-track="cta_click" data-label="hero_trainers">המאמנים שלנו</a>
+      </div>
+
+      <dl class="hero__meta" data-hero-item>
+        <div><dt>ניסיון</dt><dd>שמונה שנים</dd></div>
+        <div><dt>ניסיון תפעולי</dt><dd>מאות אלפי גיחות</dd></div>
+        <div><dt>הנהגה</dt><dd>מי שהובילו את חיל האוויר</dd></div>
+      </dl>
+    </div>
+
+    <!-- Live instrument panel (decorative) -->
+    <div class="instrument" aria-hidden="true" data-hero-panel data-tilt>
+      <div class="instrument__frame"></div>
+      <div class="instrument__bar" dir="ltr">
+        <span class="instrument__status"><i class="pulse"></i><span data-scramble>RADAR · SCAN</span></span>
+        <span class="instrument__clock" data-clock>00:00:00Z</span>
+      </div>
+      <div class="instrument__screen">
+        <canvas class="instrument__radar" data-radar aria-hidden="true"></canvas>
+      </div>
+      <dl class="instrument__readouts" dir="ltr">
+        <div><dt>HDG</dt><dd data-readout="hdg">240</dd></div>
+        <div><dt>ALT</dt><dd data-readout="alt">12,500</dd></div>
+        <div><dt>SPD</dt><dd data-readout="spd">420</dd></div>
+        <div><dt>TGT</dt><dd data-readout="tgt">—</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <a class="hero__cue" href="#solution" data-hero-item aria-label="גלילה לתוכן">
+    <span>גלילה</span><i aria-hidden="true"></i>
+  </a>
+</section>
+
+<!-- ============ TICKER (decorative) ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track" data-ticker>
+    <span>מאמני טיסה</span><span>מרכזי אימון</span><span>תכנון</span><span>הקמה</span><span>פיתוח המאמן</span><span>הפעלה ואחזקה</span><span>הדרכה</span><span>מציאות מדומה ומעורבת</span><span dir="ltr">99.7% זמינות</span><span>שמונה שנות הפעלה</span><span>מאות אלפי גיחות אימון</span>
+  </div>
+</div>
+
+<!-- ============ 01 SOLUTION ============ -->
+<section class="section" id="solution" data-section="solution">
+  <div class="container">
+    <header class="section__head" data-reveal-group>
+      <p class="eyebrow" data-reveal>
+        <span class="eyebrow__idx" dir="ltr" aria-hidden="true">01</span>
+        <span class="eyebrow__label">הפתרון</span>
+        <span class="eyebrow__en" dir="ltr" aria-hidden="true" data-scramble>SOLUTION</span>
+      </p>
+      <h2 class="section__title" data-reveal>אצלנו הטכנולוגיה וההדרכה הן חלק מאותה מערכת.</h2>
+      <p class="lead" data-reveal>מערך אימון שלם מספק אחד, לאורך כל חייו. בלי פערים בין מי שבונה, מי שמתחזק ומי שמדריך, ובלי הפתעות ביום שבו הטייס נכנס לתא.</p>
+    </header>
+
+    <div class="chain-wrap" data-chain>
+      <div class="chain__track" aria-hidden="true"><i data-chain-progress></i></div>
+      <ol class="chain">
+        <li class="chain__step" data-chain-step>
+          <span class="chain__node" aria-hidden="true"></span>
+          <span class="chain__n" dir="ltr" aria-hidden="true">01</span>
+          <h3>תכנון</h3>
+          <p>תכנון אדריכלי ותפקודי של מרכז האימון לפי הדרישה ההדרכתית.</p>
+        </li>
+        <li class="chain__step" data-chain-step>
+          <span class="chain__node" aria-hidden="true"></span>
+          <span class="chain__n" dir="ltr" aria-hidden="true">02</span>
+          <h3>הקמה</h3>
+          <p>הקמת סביבת האימון ושילוב מערכות מחשוב ותקשורת, בעמידה בדרישות התקינה.</p>
+        </li>
+        <li class="chain__step chain__step--opt" data-chain-step>
+          <span class="chain__node" aria-hidden="true"></span>
+          <span class="chain__n" dir="ltr" aria-hidden="true">03</span>
+          <h3>פיתוח המאמן</h3>
+          <p>מאמן מותאם לכלי הטיס ולתצורה הייחודית של הלקוח.</p>
+          <span class="tag">אופציה</span>
+        </li>
+        <li class="chain__step chain__step--opt" data-chain-step>
+          <span class="chain__node" aria-hidden="true"></span>
+          <span class="chain__n" dir="ltr" aria-hidden="true">04</span>
+          <h3>הפעלה ואחזקה</h3>
+          <p>ניהול תצורה, אחזקה ותמיכה תפעולית לאורך כל חיי המערכת.</p>
+          <span class="tag">אופציה</span>
+        </li>
+        <li class="chain__step" data-chain-step>
+          <span class="chain__node" aria-hidden="true"></span>
+          <span class="chain__n" dir="ltr" aria-hidden="true">05</span>
+          <h3>הדרכה</h3>
+          <p>תפיסות הדרכה ומדריכים בכירים, מרמת הטייס הבודד ועד הצוות.</p>
+        </li>
+      </ol>
+    </div>
+
+    <figure class="banner" data-reveal>
+      <div class="banner__media" data-parallax="8">
+        <div class="render render--cockpit">
+          <!-- static render stays underneath as the no-JS fallback; the live view paints over it -->
+          <svg class="render__svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false" style="direction:ltr">
+<polyline class="s2" points="0,340 12,336.2 24,332.6 36,329.4 48,326.9 60,325.2 72,324.2 84,324.1 96,324.6 108,325.6 120,327.1 132,328.7 144,330.3 156,331.8 168,332.9 180,333.8 192,334.3 204,334.5 216,334.5 228,334.4 240,334.5 252,334.9 264,335.6 276,336.9 288,338.8 300,338.9 312,336.1 324,333.1 336,330 348,327 360,324.3 372,322.3 384,320.9 396,320.4 408,320.8 420,322.1 432,324.2 444,326.9 456,330 468,333.3 480,336.5 492,339.6 504,337.8 516,335.7 528,334.2 540,333.2 552,332.8 564,332.7 576,332.8 588,333 600,333.1 612,333 624,332.5 636,331.7 648,330.6 660,329.3 672,328 684,326.7 696,325.7 708,325.2 720,325.3 732,326.2 744,327.8 756,330.1 768,333.1 780,336.6 792,339.6 804,335.8 816,332.1 828,328.9 840,326.3 852,324.4 864,323.3 876,323 888,323.5 900,324.7 912,326.2 924,328.1 936,330 948,331.8 960,333.4 972,334.6 984,335.4 996,335.9 1008,336.1 1020,336.2 1032,336.3 1044,336.6 1056,337.2 1068,338.2 1080,339.8 1092,338.2 1104,335.7 1116,332.9 1128,330 1140,327.2 1152,324.6 1164,322.5 1176,321.2 1188,320.6 1200,320.9" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polyline class="s2" points="0,363.5 12,363.5 24,364.1 36,365.3 48,366.9 60,368.9 72,371.1 84,373.3 96,375.5 108,377.6 120,379.4 132,380.9 144,382 156,382.9 168,383.4 180,383.7 192,383.8 204,383.9 216,384 228,384.3 240,384.8 252,385.7 264,387 276,388.7 288,389.2 300,386.6 312,383.6 324,380.4 336,377 348,373.5 360,370.2 372,367 384,364.3 396,362.1 408,360.5 420,359.6 432,359.6 444,360.2 456,361.7 468,363.9 480,366.8 492,370.1 504,373.9 516,377.9 528,382 540,386 552,389.8 564,386.6 576,383.6 588,381 600,379 612,377.5 624,376.6 636,376.1 648,376 660,376.2 672,376.5 684,377 696,377.4 708,377.7 720,377.7 732,377.5 744,377 756,376.2 768,375.2 780,374 792,372.7 804,371.4 816,370.2 828,369.3 840,368.7 852,368.7 864,369.1 876,370.2 888,372 900,374.4 912,377.4 924,380.9 936,384.9 948,389.2 960,386.3 972,381.9 984,377.6 996,373.5 1008,370 1020,367 1032,364.7 1044,363 1056,362.2 1068,362.1 1080,362.7 1092,363.9 1104,365.6 1116,367.7 1128,370.2 1140,372.7 1152,375.3 1164,377.7 1176,379.9 1188,381.9 1200,383.5" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polyline class="s2" points="0,439.4 12,442.2 24,444.8 36,447.1 48,449.1 60,450.7 72,452 84,453 96,453.8 108,454.3 120,454.6 132,454.8 144,455 156,455.2 168,455.6 180,456.2 192,457 204,458.2 216,459.7 228,458.4 240,456.2 252,453.5 264,450.5 276,447.1 288,443.6 300,439.8 312,436 324,432.1 336,428.4 348,424.9 360,421.7 372,418.9 384,416.7 396,415 408,414 420,413.6 432,414 444,415.2 456,417 468,419.6 480,422.8 492,426.5 504,430.8 516,435.4 528,440.3 540,445.3 552,450.5 564,455.5 576,459.6 588,455 600,450.7 612,446.9 624,443.6 636,440.8 648,438.5 660,436.8 672,435.6 684,434.8 696,434.6 708,434.7 720,435.1 732,435.7 744,436.5 756,437.3 768,438.1 780,438.8 792,439.4 804,439.7 816,439.8 828,439.6 840,439.2 852,438.5 864,437.6 876,436.5 888,435.3 900,434.1 912,432.9 924,431.8 936,431 948,430.4 960,430.2 972,430.5 984,431.2 996,432.5 1008,434.4 1020,436.8 1032,439.9 1044,443.4 1056,447.5 1068,452 1080,456.9 1092,458 1104,452.8 1116,447.5 1128,442.3 1140,437.3 1152,432.5 1164,428.2 1176,424.4 1188,421.2 1200,418.7" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polyline class="s2" points="0,548.6 12,549 24,549.2 36,549.5 48,549.9 60,549.6 72,548.8 84,547.8 96,546.5 108,544.9 120,542.9 132,540.5 144,537.8 156,534.8 168,531.4 180,527.8 192,523.9 204,519.9 216,515.8 228,511.8 240,507.8 252,503.9 264,500.4 276,497.2 288,494.4 300,492.1 312,490.4 324,489.3 336,488.9 348,489.1 360,490.1 372,491.8 384,494.3 396,497.4 408,501.1 420,505.4 432,510.2 444,515.5 456,521.1 468,527 480,533 492,539.1 504,545.2 516,548.9 528,543.2 540,537.7 552,532.7 564,528.1 576,524 588,520.5 600,517.5 612,515 624,513.2 636,511.9 648,511.1 660,510.8 672,510.9 684,511.5 696,512.3 708,513.3 720,514.6 732,515.9 744,517.2 756,518.5 768,519.7 780,520.7 792,521.5 804,522.1 816,522.4 828,522.5 840,522.3 852,521.9 864,521.2 876,520.4 888,519.4 900,518.4 912,517.3 924,516.3 936,515.5 948,514.8 960,514.5 972,514.5 984,514.8 996,515.7 1008,517 1020,518.9 1032,521.3 1044,524.2 1056,527.7 1068,531.8 1080,536.2 1092,541.2 1104,546.5 1116,547.9 1128,542.1 1140,536.2 1152,530.2 1164,524.3 1176,518.5 1188,513 1200,507.9" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="-600" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="-450" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="-300" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="-150" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="0" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="150" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="300" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="450" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="600" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="750" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="900" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="1050" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="1200" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="1350" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="1500" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="1650" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="300" x2="1800" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="0" y1="300" x2="1200" y2="300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="530" y1="390" x2="430" y2="390" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="430" y1="390" x2="430" y2="382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="408" y="394" text-anchor="middle">10</text>
+<line class="s" x1="670" y1="390" x2="770" y2="390" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="770" y1="390" x2="770" y2="382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="792" y="394" text-anchor="middle">10</text>
+<line class="s" x1="530" y1="345" x2="430" y2="345" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="430" y1="345" x2="430" y2="337" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="408" y="349" text-anchor="middle">5</text>
+<line class="s" x1="670" y1="345" x2="770" y2="345" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="770" y1="345" x2="770" y2="337" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="792" y="349" text-anchor="middle">5</text>
+<line class="s" x1="530" y1="255" x2="430" y2="255" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="430" y1="255" x2="430" y2="263" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="408" y="259" text-anchor="middle">5</text>
+<line class="s" x1="670" y1="255" x2="770" y2="255" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="770" y1="255" x2="770" y2="263" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="792" y="259" text-anchor="middle">5</text>
+<line class="s" x1="530" y1="210" x2="430" y2="210" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="430" y1="210" x2="430" y2="218" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="408" y="214" text-anchor="middle">10</text>
+<line class="s" x1="670" y1="210" x2="770" y2="210" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="770" y1="210" x2="770" y2="218" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="792" y="214" text-anchor="middle">10</text>
+<circle class="s" cx="600" cy="300" r="10" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="560" y1="300" x2="586" y2="300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="614" y1="300" x2="640" y2="300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="600" y1="276" x2="600" y2="286" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s2" cx="626" cy="318" r="7" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="633" y1="318" x2="645" y2="318" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="607" y1="318" x2="619" y2="318" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="626" y1="311" x2="626" y2="303" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="420" y1="70" x2="420" y2="84" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="420" y="62" text-anchor="middle">225</text>
+<line class="s" x1="450" y1="70" x2="450" y2="78" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="480" y1="70" x2="480" y2="84" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="480" y="62" text-anchor="middle">235</text>
+<line class="s" x1="510" y1="70" x2="510" y2="78" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="540" y1="70" x2="540" y2="84" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="540" y="62" text-anchor="middle">245</text>
+<line class="s" x1="570" y1="70" x2="570" y2="78" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="600" y1="70" x2="600" y2="84" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="600" y="62" text-anchor="middle">255</text>
+<line class="s" x1="630" y1="70" x2="630" y2="78" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="660" y1="70" x2="660" y2="84" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="660" y="62" text-anchor="middle">265</text>
+<line class="s" x1="690" y1="70" x2="690" y2="78" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="720" y1="70" x2="720" y2="84" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="720" y="62" text-anchor="middle">275</text>
+<line class="s" x1="750" y1="70" x2="750" y2="78" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="780" y1="70" x2="780" y2="84" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="780" y="62" text-anchor="middle">285</text>
+<polygon class="dot" points="600,94 594,104 606,104" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="220" y1="200" x2="220" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="210" y1="200" x2="220" y2="200" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="215" y1="225" x2="220" y2="225" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="210" y1="250" x2="220" y2="250" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="215" y1="275" x2="220" y2="275" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="210" y1="300" x2="220" y2="300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="215" y1="325" x2="220" y2="325" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="210" y1="350" x2="220" y2="350" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="215" y1="375" x2="220" y2="375" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="210" y1="400" x2="220" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="f s" x="176" y="288" width="40" height="24" rx="2" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="196" y="304" text-anchor="middle">420</text>
+<text class="lbl" x="196" y="190" text-anchor="middle">KTS</text>
+<line class="s2" x1="980" y1="200" x2="980" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="970" y1="200" x2="980" y2="200" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="975" y1="225" x2="980" y2="225" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="970" y1="250" x2="980" y2="250" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="975" y1="275" x2="980" y2="275" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="970" y1="300" x2="980" y2="300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="975" y1="325" x2="980" y2="325" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="970" y1="350" x2="980" y2="350" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="975" y1="375" x2="980" y2="375" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="970" y1="400" x2="980" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="f s" x="984" y="288" width="40" height="24" rx="2" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="1004" y="304" text-anchor="middle">12500</text>
+<text class="lbl" x="1004" y="190" text-anchor="middle">FT</text>
+<polyline class="s3" points="-40,620 120,300 380,120 600,70 820,120 1080,300 1240,620" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polyline class="s2" points="20,620 170,330 410,160 600,112 790,160 1030,330 1180,620" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="120" y1="300" x2="170" y2="330" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="1080" y1="300" x2="1030" y2="330" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="380" y1="120" x2="410" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="820" y1="120" x2="790" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="0,600 0,540 280,500 920,500 1200,540 1200,600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="scr" x="330" y="515" width="130" height="70" rx="3" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="338" y1="540" x2="452" y2="540" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="338" y1="562" x2="452" y2="562" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="scr" x="540" y="515" width="130" height="70" rx="3" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="548" y1="540" x2="662" y2="540" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="548" y1="562" x2="662" y2="562" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="scr" x="750" y="515" width="130" height="70" rx="3" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="758" y1="540" x2="872" y2="540" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="758" y1="562" x2="872" y2="562" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="560" text-anchor="start">HUD · PITCH LADDER · HDG TAPE</text>
+<text class="lbl" x="1160" y="560" text-anchor="end">COCKPIT VIEW · RENDER</text>
+</svg>
+          <canvas class="render__live" data-takeoff aria-hidden="true"></canvas>
+        </div>
+        <span class="banner__scrim" aria-hidden="true"></span>
+        <span class="hud-corners" aria-hidden="true"></span>
+        <span class="render__tag render__tag--live" dir="ltr" aria-hidden="true"><i class="pulse"></i><span data-scramble>LIVE · TAKEOFF</span></span>
+      </div>
+      <figcaption class="banner__text">
+        <p class="eyebrow"><span class="eyebrow__label">מהתכנון ועד תא הטייס</span></p>
+        <h3>מתוכנית מרכז האימון ועד הרגע שבו הטייס נכנס לתא.</h3>
+        <p>כל מרכז מתוכנן סביב תוכנית ההדרכה: מספר העמדות, מיקום המדריך והזרימה בין תדריך, אימון ותחקיר.</p>
+        <div class="flow" role="list" aria-label="זרימת האימון">
+          <span class="flow__node" role="listitem"><b>תדריך</b><small dir="ltr" aria-hidden="true">BRIEF</small></span>
+          <i class="flow__line" aria-hidden="true"><em></em></i>
+          <span class="flow__node flow__node--hl" role="listitem"><b>אימון</b><small dir="ltr" aria-hidden="true">TRAIN</small></span>
+          <i class="flow__line flow__line--2" aria-hidden="true"><em></em></i>
+          <span class="flow__node" role="listitem"><b>תחקיר</b><small dir="ltr" aria-hidden="true">DEBRIEF</small></span>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 02 TRAINERS ============ -->
+<section class="section section--alt" id="trainers" data-section="trainers">
+  <div class="container">
+    <header class="section__head" data-reveal-group>
+      <p class="eyebrow" data-reveal>
+        <span class="eyebrow__idx" dir="ltr" aria-hidden="true">02</span>
+        <span class="eyebrow__label">המאמנים שלנו</span>
+        <span class="eyebrow__en" dir="ltr" aria-hidden="true" data-scramble>TRAINERS</span>
+      </p>
+      <h2 class="section__title" data-reveal>שני מאמנים למטוסי ההדרכה של חיל האוויר הישראלי.</h2>
+      <p class="lead" data-reveal>פיתחנו מאמן לכל אחד ממטוסי ההדרכה של בית הספר לטיסה, ועמדנו בדרישות של אחד הלקוחות התובעניים בעולם. אותה פלטפורמה מוכנה להתאמה לכל כלי טיס ולכל לקוח.</p>
+    </header>
+
+    <div class="products" data-reveal-group>
+      <article class="product card" data-reveal data-spotlight>
+        <div class="product__media">
+          <div class="render render--plan" data-draw>
+            <svg class="render__svg" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="direction:ltr">
+<line class="g" x1="40" y1="20" x2="40" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="80" y1="20" x2="80" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="120" y1="20" x2="120" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="160" y1="20" x2="160" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="200" y1="20" x2="200" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="240" y1="20" x2="240" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="280" y1="20" x2="280" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="320" y1="20" x2="320" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="360" y1="20" x2="360" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="400" y1="20" x2="400" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="440" y1="20" x2="440" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="480" y1="20" x2="480" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="520" y1="20" x2="520" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="560" y1="20" x2="560" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="20" x2="600" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="640" y1="20" x2="640" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="680" y1="20" x2="680" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="720" y1="20" x2="720" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="760" y1="20" x2="760" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="40" x2="760" y2="40" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="80" x2="760" y2="80" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="120" x2="760" y2="120" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="160" x2="760" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="200" x2="760" y2="200" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="240" x2="760" y2="240" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="280" x2="760" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="320" x2="760" y2="320" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="360" x2="760" y2="360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="400" x2="760" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="440" x2="760" y2="440" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="480" x2="760" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="400" y1="36" x2="400" y2="484" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="426,214 718,238 718,292 426,300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="374,214 82,238 82,292 374,300" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="410,396 518,410 518,438 414,438" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="390,396 282,410 282,438 386,438" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="436" y1="288" x2="710" y2="282" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="364" y1="288" x2="90" y2="282" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="400,70 404.6,78 413.2,85.9 416.1,93.9 417.4,101.8 420.1,109.8 422.9,117.8 424.7,125.7 425.1,133.7 425.5,141.6 426.3,149.6 427.3,157.5 428.2,165.5 428.8,173.5 429,181.4 428.9,189.4 428.8,197.3 428.5,205.3 428.3,213.2 428,221.2 427.6,229.2 427.4,237.1 427.2,245.1 427,253 427,261 426.8,269 426.3,276.9 425.5,284.9 424.5,292.8 423.4,300.8 422.3,308.8 421.4,316.7 420.6,324.7 420.1,332.6 420,340.6 419.7,348.5 418.8,356.5 417.5,364.5 416.1,372.4 414.7,380.4 413.6,388.3 413.1,396.3 412.9,404.2 412.1,412.2 411,420.2 409.8,428.1 409.1,436.1 406.7,444 400,452 400,452 393.3,444 390.9,436.1 390.2,428.1 389,420.2 387.9,412.2 387.1,404.2 386.9,396.3 386.4,388.3 385.3,380.4 383.9,372.4 382.5,364.5 381.2,356.5 380.3,348.5 380,340.6 379.9,332.6 379.4,324.7 378.6,316.7 377.7,308.8 376.6,300.8 375.5,292.8 374.5,284.9 373.7,276.9 373.2,269 373,261 373,253 372.8,245.1 372.6,237.1 372.4,229.2 372,221.2 371.7,213.2 371.5,205.3 371.2,197.3 371.1,189.4 371,181.4 371.2,173.5 371.8,165.5 372.7,157.5 373.7,149.6 374.5,141.6 374.9,133.7 375.3,125.7 377.1,117.8 379.9,109.8 382.6,101.8 383.9,93.9 386.8,85.9 395.4,78 400,70" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s2" points="400,132 400.8,134.6 402.9,137.2 406,139.9 409.4,142.5 412.4,145.1 414.4,147.8 415,150.4 415.1,153 415.4,155.6 415.9,158.2 416.5,160.9 417.3,163.5 418.1,166.1 418.9,168.8 419.7,171.4 420.4,174 421.1,176.6 421.5,179.2 421.9,181.9 422,184.5 422,187.1 422,189.8 421.9,192.4 421.9,195 421.8,197.6 421.7,200.2 421.6,202.9 421.5,205.5 421.4,208.1 421.3,210.8 421.2,213.4 421.1,216 421.1,218.6 421,221.2 421,223.9 420.9,226.5 420.3,229.1 419.2,231.8 417.8,234.4 416.2,237 414.6,239.6 413.3,242.2 412.4,244.9 412,247.5 410.7,250.1 406.5,252.8 401.9,255.4 400,258 400,258 398.1,255.4 393.5,252.8 389.3,250.1 388,247.5 387.6,244.9 386.7,242.2 385.4,239.6 383.8,237 382.2,234.4 380.8,231.8 379.7,229.1 379.1,226.5 379,223.9 379,221.2 378.9,218.6 378.9,216 378.8,213.4 378.7,210.8 378.6,208.1 378.5,205.5 378.4,202.9 378.3,200.2 378.2,197.6 378.1,195 378.1,192.4 378,189.8 378,187.1 378,184.5 378.1,181.9 378.5,179.2 378.9,176.6 379.6,174 380.3,171.4 381.1,168.8 381.9,166.1 382.7,163.5 383.5,160.9 384.1,158.2 384.6,155.6 384.9,153 385,150.4 385.6,147.8 387.6,145.1 390.6,142.5 394,139.9 397.1,137.2 399.2,134.6 400,132" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="400" y1="136" x2="400" y2="254" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s3" x1="400" y1="372" x2="400" y2="452" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="d" cx="400" cy="70" r="58" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="400" cy="70" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="348" y1="70" x2="452" y2="70" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="82" y1="468" x2="718" y2="468" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="82" y1="460" x2="82" y2="476" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="718" y1="460" x2="718" y2="476" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="400" y="490" text-anchor="middle">SPAN</text>
+<line class="d" x1="720" y1="70" x2="720" y2="452" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="70" x2="728" y2="70" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="452" x2="728" y2="452" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="734" y="265" text-anchor="start">LENGTH</text>
+<text class="lbl" x="408" y="48" text-anchor="start">CL</text>
+<line class="s2" x1="64" y1="100" x2="76" y2="100" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="104" text-anchor="start">FS00</text>
+<line class="s2" x1="64" y1="160" x2="76" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="164" text-anchor="start">FS01</text>
+<line class="s2" x1="64" y1="220" x2="76" y2="220" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="224" text-anchor="start">FS02</text>
+<line class="s2" x1="64" y1="280" x2="76" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="284" text-anchor="start">FS03</text>
+<line class="s2" x1="64" y1="340" x2="76" y2="340" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="344" text-anchor="start">FS04</text>
+<line class="s2" x1="64" y1="400" x2="76" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="404" text-anchor="start">FS05</text>
+<line class="s" x1="24" y1="24" x2="42" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="24" x2="24" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="758" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="776" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="42" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="24" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="758" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="776" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+</svg>
+          </div>
+          <span class="render__tag" dir="ltr" aria-hidden="true" data-scramble>TRAINER 01 · PLAN VIEW</span>
+        </div>
+        <div class="product__body">
+          <span class="tag">מטוס הדרכה בסיסי</span>
+          <h3>מאמן Grob G-120</h3>
+          <p>מאמן למטוס ההדרכה הבסיסי, שבו כל טייס מתחיל את דרכו.</p>
+        </div>
+      </article>
+
+      <article class="product card" data-reveal data-spotlight>
+        <div class="product__media">
+          <div class="render render--plan" data-draw>
+            <svg class="render__svg" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="direction:ltr">
+<line class="g" x1="40" y1="20" x2="40" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="80" y1="20" x2="80" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="120" y1="20" x2="120" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="160" y1="20" x2="160" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="200" y1="20" x2="200" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="240" y1="20" x2="240" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="280" y1="20" x2="280" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="320" y1="20" x2="320" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="360" y1="20" x2="360" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="400" y1="20" x2="400" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="440" y1="20" x2="440" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="480" y1="20" x2="480" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="520" y1="20" x2="520" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="560" y1="20" x2="560" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="20" x2="600" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="640" y1="20" x2="640" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="680" y1="20" x2="680" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="720" y1="20" x2="720" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="760" y1="20" x2="760" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="40" x2="760" y2="40" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="80" x2="760" y2="80" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="120" x2="760" y2="120" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="160" x2="760" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="200" x2="760" y2="200" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="240" x2="760" y2="240" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="280" x2="760" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="320" x2="760" y2="320" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="360" x2="760" y2="360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="400" x2="760" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="440" x2="760" y2="440" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="480" x2="760" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="400" y1="36" x2="400" y2="484" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="434,206 736,232 736,288 434,304" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="366,206 64,232 64,288 366,304" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="410,412 538,428 538,454 412,454" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="390,412 262,428 262,454 388,454" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="444" y1="292" x2="728" y2="278" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="356" y1="292" x2="72" y2="278" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="400,62 406.5,70.5 417.6,79 420.2,87.5 422.5,96 426.1,104.5 429.1,113 430,121.5 430.6,130 431.8,138.5 433.4,147 434.8,155.5 435.8,164 436,172.5 436,181 436,189.5 436,198 436,206.5 436,215 436,223.5 436,232 436,240.5 436,249 435.9,257.5 435.4,266 434.7,274.5 433.8,283 432.8,291.5 431.9,300 431,308.5 430.4,317 430,325.5 429.9,334 429.2,342.5 427.9,351 426.2,359.5 424.3,368 422.5,376.5 421.1,385 420.2,393.5 420,402 419.2,410.5 417.6,419 415.6,427.5 413.7,436 412.4,444.5 411.9,453 405.5,461.5 400,470 400,470 394.5,461.5 388.1,453 387.6,444.5 386.3,436 384.4,427.5 382.4,419 380.8,410.5 380,402 379.8,393.5 378.9,385 377.5,376.5 375.7,368 373.8,359.5 372.1,351 370.8,342.5 370.1,334 370,325.5 369.6,317 369,308.5 368.1,300 367.2,291.5 366.2,283 365.3,274.5 364.6,266 364.1,257.5 364,249 364,240.5 364,232 364,223.5 364,215 364,206.5 364,198 364,189.5 364,181 364,172.5 364.2,164 365.2,155.5 366.6,147 368.2,138.5 369.4,130 370,121.5 370.9,113 373.9,104.5 377.5,96 379.8,87.5 382.4,79 393.5,70.5 400,62" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="424" y="176" width="7" height="16" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="369" y="176" width="7" height="16" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="426" y="212" width="7" height="16" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="367" y="212" width="7" height="16" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="426" y="248" width="7" height="16" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="367" y="248" width="7" height="16" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="422" y="284" width="7" height="16" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="371" y="284" width="7" height="16" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="370" y1="150" x2="386" y2="134" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="430" y1="150" x2="414" y2="134" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="386" y1="134" x2="414" y2="134" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s3" x1="400" y1="388" x2="400" y2="470" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="d" cx="400" cy="62" r="64" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="400" cy="62" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="342" y1="62" x2="458" y2="62" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="64" y1="482" x2="736" y2="482" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="64" y1="474" x2="64" y2="490" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="736" y1="474" x2="736" y2="490" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="400" y="504" text-anchor="middle">SPAN</text>
+<line class="d" x1="720" y1="62" x2="720" y2="470" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="62" x2="728" y2="62" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="470" x2="728" y2="470" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="734" y="270" text-anchor="start">LENGTH</text>
+<text class="lbl" x="408" y="48" text-anchor="start">CL</text>
+<line class="s2" x1="64" y1="100" x2="76" y2="100" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="104" text-anchor="start">FS00</text>
+<line class="s2" x1="64" y1="160" x2="76" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="164" text-anchor="start">FS01</text>
+<line class="s2" x1="64" y1="220" x2="76" y2="220" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="224" text-anchor="start">FS02</text>
+<line class="s2" x1="64" y1="280" x2="76" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="284" text-anchor="start">FS03</text>
+<line class="s2" x1="64" y1="340" x2="76" y2="340" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="344" text-anchor="start">FS04</text>
+<line class="s2" x1="64" y1="400" x2="76" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="404" text-anchor="start">FS05</text>
+<line class="s" x1="24" y1="24" x2="42" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="24" x2="24" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="758" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="776" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="42" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="24" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="758" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="776" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+</svg>
+          </div>
+          <span class="render__tag" dir="ltr" aria-hidden="true" data-scramble>TRAINER 02 · PLAN VIEW</span>
+        </div>
+        <div class="product__body">
+          <span class="tag">מטוס תובלה ומודיעין</span>
+          <h3>מאמן Beechcraft Bonanza</h3>
+          <p>מאמן למטוס ההדרכה של מסלול התובלה והמודיעין, עם תא טייס בתצורה הישראלית, מערכת תצוגה היקפית ועמדת מדריך.</p>
+        </div>
+      </article>
+
+      <div class="products__divider" data-reveal>
+        <p class="eyebrow">
+          <span class="eyebrow__label">מטוסי קרב</span>
+          <span class="eyebrow__en" dir="ltr" aria-hidden="true" data-scramble>FIGHTERS · SAME PLATFORM</span>
+        </p>
+        <p>ממטוסי הדרכה ועד מטוסי קרב: אותה פלטפורמה, אותה עמדת מדריך, בתצורה של הלקוח.</p>
+      </div>
+
+      <article class="product card" data-reveal data-spotlight>
+        <div class="product__media">
+          <div class="render render--plan" data-draw>
+            <svg class="render__svg" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="direction:ltr">
+<line class="g" x1="40" y1="20" x2="40" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="80" y1="20" x2="80" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="120" y1="20" x2="120" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="160" y1="20" x2="160" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="200" y1="20" x2="200" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="240" y1="20" x2="240" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="280" y1="20" x2="280" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="320" y1="20" x2="320" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="360" y1="20" x2="360" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="400" y1="20" x2="400" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="440" y1="20" x2="440" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="480" y1="20" x2="480" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="520" y1="20" x2="520" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="560" y1="20" x2="560" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="20" x2="600" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="640" y1="20" x2="640" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="680" y1="20" x2="680" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="720" y1="20" x2="720" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="760" y1="20" x2="760" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="40" x2="760" y2="40" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="80" x2="760" y2="80" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="120" x2="760" y2="120" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="160" x2="760" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="200" x2="760" y2="200" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="240" x2="760" y2="240" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="280" x2="760" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="320" x2="760" y2="320" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="360" x2="760" y2="360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="400" x2="760" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="440" x2="760" y2="440" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="480" x2="760" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="400" y1="36" x2="400" y2="484" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="422,398 498,462 498,488 422,462" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="378,398 302,462 302,488 378,462" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="424,262 515,358 515,388 424,392" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="376,262 285,358 285,388 376,392" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="423,178 434,228 443,262 424,262" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="377,178 366,228 357,262 376,262" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="517,406 523,406 523,332 520,318 517,332" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="283,406 277,406 277,332 280,318 283,332" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="513" y="348" width="4" height="44" rx="0" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="283" y="348" width="4" height="44" rx="0" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="400,46 409,78 416,118 420,150 423,185 424,262 424,392 422,420 418,452 413,472 400,472 400,472 387,472 382,452 378,420 376,392 376,262 377,185 380,150 384,118 391,78 400,46" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s2" points="400,98 400.2,100 400.9,102 401.9,104 403.1,106 404.5,108 405.9,110 407.1,112 408.1,114 408.8,116 409,118 409.1,120 409.3,122 409.6,124 410,126 410.5,128 411.1,130 411.7,132 412.3,134 412.9,136 413.5,138 414,140 414.4,142 414.7,144 414.9,146 415,148 415,150 414.9,152 414.7,154 414.6,156 414.3,158 414.1,160 413.8,162 413.5,164 413.2,166 412.9,168 412.7,170 412.4,172 412.3,174 412.1,176 412,178 412,180 411.4,182 409.7,184 407.3,186 404.7,188 402.3,190 400.6,192 400,194 400,194 399.4,192 397.7,190 395.3,188 392.7,186 390.3,184 388.6,182 388,180 388,178 387.9,176 387.7,174 387.6,172 387.3,170 387.1,168 386.8,166 386.5,164 386.2,162 385.9,160 385.7,158 385.4,156 385.3,154 385.1,152 385,150 385,148 385.1,146 385.3,144 385.6,142 386,140 386.5,138 387.1,136 387.7,134 388.3,132 388.9,130 389.5,128 390,126 390.4,124 390.7,122 390.9,120 391,118 391.2,116 391.9,114 392.9,112 394.1,110 395.5,108 396.9,106 398.1,104 399.1,102 399.8,100 400,98" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="400" y1="102" x2="400" y2="190" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="d" points="386,206 414,206 416,258 384,258" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s3" x1="400" y1="330" x2="400" y2="452" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="s2" x="389" y="456" width="22" height="20" rx="2" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="400" y1="46" x2="400" y2="30" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="277" y1="500" x2="523" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="277" y1="492" x2="277" y2="508" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="523" y1="492" x2="523" y2="508" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="400" y="516" text-anchor="middle">SPAN</text>
+<line class="d" x1="720" y1="30" x2="720" y2="488" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="30" x2="728" y2="30" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="488" x2="728" y2="488" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="734" y="263" text-anchor="start">LENGTH</text>
+<text class="lbl" x="408" y="48" text-anchor="start">CL</text>
+<line class="s2" x1="64" y1="100" x2="76" y2="100" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="104" text-anchor="start">FS00</text>
+<line class="s2" x1="64" y1="160" x2="76" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="164" text-anchor="start">FS01</text>
+<line class="s2" x1="64" y1="220" x2="76" y2="220" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="224" text-anchor="start">FS02</text>
+<line class="s2" x1="64" y1="280" x2="76" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="284" text-anchor="start">FS03</text>
+<line class="s2" x1="64" y1="340" x2="76" y2="340" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="344" text-anchor="start">FS04</text>
+<line class="s2" x1="64" y1="400" x2="76" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="404" text-anchor="start">FS05</text>
+<line class="s" x1="24" y1="24" x2="42" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="24" x2="24" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="758" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="776" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="42" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="24" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="758" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="776" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+</svg>
+          </div>
+          <span class="render__tag" dir="ltr" aria-hidden="true" data-scramble>TRAINER 03 · PLAN VIEW</span>
+        </div>
+        <div class="product__body">
+          <span class="tag">מטוס קרב רב-משימתי</span>
+          <h3>מאמן F-16</h3>
+          <p>התאמת הפלטפורמה למטוס קרב: תא טייס נאמן למקור, שילוב המערכות הייחודיות של הלקוח ומודל טיסה מדויק.</p>
+        </div>
+      </article>
+
+      <article class="product card" data-reveal data-spotlight>
+        <div class="product__media">
+          <div class="render render--plan" data-draw>
+            <svg class="render__svg" viewBox="0 0 800 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="direction:ltr">
+<line class="g" x1="40" y1="20" x2="40" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="80" y1="20" x2="80" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="120" y1="20" x2="120" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="160" y1="20" x2="160" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="200" y1="20" x2="200" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="240" y1="20" x2="240" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="280" y1="20" x2="280" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="320" y1="20" x2="320" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="360" y1="20" x2="360" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="400" y1="20" x2="400" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="440" y1="20" x2="440" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="480" y1="20" x2="480" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="520" y1="20" x2="520" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="560" y1="20" x2="560" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="600" y1="20" x2="600" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="640" y1="20" x2="640" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="680" y1="20" x2="680" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="720" y1="20" x2="720" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="760" y1="20" x2="760" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="40" x2="760" y2="40" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="80" x2="760" y2="80" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="120" x2="760" y2="120" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="160" x2="760" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="200" x2="760" y2="200" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="240" x2="760" y2="240" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="280" x2="760" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="320" x2="760" y2="320" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="360" x2="760" y2="360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="400" x2="760" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="440" x2="760" y2="440" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="40" y1="480" x2="760" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="400" y1="36" x2="400" y2="484" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="442,398 505,444 505,468 442,486" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="358,398 295,444 295,468 358,486" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="452,250 545,317 545,357 452,382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="348,250 255,317 255,357 348,382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="400,46 414,90 426,132 440,170 452,180 454,214 452,250 452,330 448,400 440,440 428,462 416,472 400,472 400,472 384,472 372,462 360,440 352,400 348,330 348,250 346,214 348,180 360,170 374,132 386,90 400,46" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="427,385 445,405 445,448 429,455" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="373,385 355,405 355,448 371,455" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s2" points="400,92 412,110 420,140 416,172 400,188 400,188 384,172 380,140 388,110 400,92" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="400" y1="96" x2="400" y2="184" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="d" points="438,174 452,181 452,214 438,214" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="d" points="362,174 348,181 348,214 362,214" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="d" x="410" y="236" width="26" height="96" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<rect class="d" x="364" y="236" width="26" height="96" rx="1" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="d" points="400,104 406,114 400,124 394,114" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polyline class="s2" points="384,472 390,480 396,472 402,480 408,472 414,480 416,472" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="255" y1="500" x2="545" y2="500" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="255" y1="492" x2="255" y2="508" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="545" y1="492" x2="545" y2="508" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="400" y="516" text-anchor="middle">SPAN</text>
+<line class="d" x1="720" y1="46" x2="720" y2="486" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="46" x2="728" y2="46" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="712" y1="486" x2="728" y2="486" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="734" y="270" text-anchor="start">LENGTH</text>
+<text class="lbl" x="408" y="48" text-anchor="start">CL</text>
+<line class="s2" x1="64" y1="100" x2="76" y2="100" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="104" text-anchor="start">FS00</text>
+<line class="s2" x1="64" y1="160" x2="76" y2="160" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="164" text-anchor="start">FS01</text>
+<line class="s2" x1="64" y1="220" x2="76" y2="220" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="224" text-anchor="start">FS02</text>
+<line class="s2" x1="64" y1="280" x2="76" y2="280" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="284" text-anchor="start">FS03</text>
+<line class="s2" x1="64" y1="340" x2="76" y2="340" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="344" text-anchor="start">FS04</text>
+<line class="s2" x1="64" y1="400" x2="76" y2="400" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="40" y="404" text-anchor="start">FS05</text>
+<line class="s" x1="24" y1="24" x2="42" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="24" x2="24" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="758" y2="24" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="24" x2="776" y2="42" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="42" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="24" y1="496" x2="24" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="758" y2="496" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s" x1="776" y1="496" x2="776" y2="478" pathLength="1" vector-effect="non-scaling-stroke"/>
+</svg>
+          </div>
+          <span class="render__tag" dir="ltr" aria-hidden="true" data-scramble>TRAINER 04 · PLAN VIEW</span>
+        </div>
+        <div class="product__body">
+          <span class="tag">מטוס קרב דור חמישי</span>
+          <h3>מאמן F-35</h3>
+          <p>אימון בתצורה המבצעית המלאה: מערכת תצוגה היקפית, מציאות מעורבת ועמדת מדריך, בהתאמה לתצורת הלקוח.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="includes" data-reveal-group>
+      <div class="spec card" data-reveal data-spotlight>
+        <h3 class="spec__title">מה כל מאמן כולל</h3>
+        <ol class="spec__list">
+          <li><span class="spec__n" dir="ltr" aria-hidden="true">01</span><span>תא טייס נאמן למקור, מותאם לתצורה של הלקוח.</span></li>
+          <li><span class="spec__n" dir="ltr" aria-hidden="true">02</span><span>שילוב מלא של חומרה ותוכנה.</span></li>
+          <li><span class="spec__n" dir="ltr" aria-hidden="true">03</span><span>מודל טיסה מדויק.</span></li>
+          <li><span class="spec__n" dir="ltr" aria-hidden="true">04</span><span>עמדת מדריך וכלי תחקיר בפיתוח עצמי.</span></li>
+        </ol>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item card" data-reveal>
+          <div class="render render--iso" data-draw>
+            <svg class="render__svg" viewBox="0 0 800 560" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="direction:ltr">
+<line class="g" x1="400" y1="110" x2="122.9" y2="270" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="434.6" y1="130" x2="157.5" y2="290" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="469.3" y1="150" x2="192.2" y2="310" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="503.9" y1="170" x2="226.8" y2="330" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="538.6" y1="190" x2="261.4" y2="350" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="573.2" y1="210" x2="296.1" y2="370" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="607.8" y1="230" x2="330.7" y2="390" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="642.5" y1="250" x2="365.4" y2="410" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="677.1" y1="270" x2="400" y2="430" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="400" y1="110" x2="677.1" y2="270" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="365.4" y1="130" x2="642.5" y2="290" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="330.7" y1="150" x2="607.8" y2="310" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="296.1" y1="170" x2="573.2" y2="330" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="261.4" y1="190" x2="538.6" y2="350" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="226.8" y1="210" x2="503.9" y2="370" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="192.2" y1="230" x2="469.3" y2="390" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="157.5" y1="250" x2="434.6" y2="410" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="122.9" y1="270" x2="400" y2="430" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="174.8,280 382.7,400 382.7,390 174.8,270" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="625.2,260 382.7,400 382.7,390 625.2,250" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="417.3,130 625.2,250 382.7,390 174.8,270" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="398.3,161 571.5,261 571.5,141 398.3,41" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="594,248 571.5,261 571.5,141 594,128" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="420.8,28 594,128 571.5,141 398.3,41" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="410.4,130 476.2,168 476.2,108 410.4,70" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="410.4" y1="110" x2="476.2" y2="148" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="410.4" y1="90" x2="476.2" y2="128" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="493.5,178 559.3,216 559.3,156 493.5,118" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="493.5" y1="158" x2="559.3" y2="196" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="493.5" y1="138" x2="559.3" y2="176" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="477.9,65 529.9,95 526.4,47 481.4,21" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="503.9" y1="80" x2="503.9" y2="34" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="417.3,200 443.3,215 443.3,207 417.3,192" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="460.6,205 443.3,215 443.3,207 460.6,197" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="434.6,182 460.6,197 443.3,207 417.3,192" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="477.9,235 503.9,250 503.9,242 477.9,227" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="521.2,240 503.9,250 503.9,242 521.2,232" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="495.3,217 521.2,232 503.9,242 477.9,227" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="261.4,290 348,340 348,304 261.4,254" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="417.3,300 348,340 348,304 417.3,264" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="330.7,214 417.3,264 348,304 261.4,254" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="256.2,257 342.8,307 342.8,197 256.2,147" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="355,300 342.8,307 342.8,197 355,190" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="268.4,140 355,190 342.8,197 256.2,147" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="261.4,254 270.1,259 270.1,239 261.4,234" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="348,214 270.1,259 270.1,239 348,194" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="339.4,189 348,194 270.1,239 261.4,234" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="339.4,299 348,304 348,284 339.4,279" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="426,259 348,304 348,284 426,239" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="417.3,234 426,239 348,284 339.4,279" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s3" x1="408.7" y1="255" x2="408.7" y2="195" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="398.3,195 408.7,201 408.7,183 398.3,177" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="419.1,195 408.7,201 408.7,183 419.1,177" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="408.7,171 419.1,177 408.7,183 398.3,177" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s3" x1="313.4" y1="209" x2="313.4" y2="183" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="166.2" y1="285" x2="374" y2="405" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="278.1" y="359" text-anchor="start">W</text>
+<line class="d" x1="633.8" y1="265" x2="391.3" y2="405" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="522.6" y="339" text-anchor="start">L</text>
+<text class="lbl" x="350.8" y="-2" text-anchor="start">PANEL · 2× MFD</text>
+<text class="lbl" x="437.9" y="-3" text-anchor="start">HUD</text>
+<text class="lbl" x="365" y="176" text-anchor="start">SEAT</text>
+<text class="lbl" x="40" y="530" text-anchor="start">COCKPIT · 3D LAYOUT</text>
+<text class="lbl" x="760" y="530" text-anchor="end">SCALE 1:1 REPLICA</text>
+</svg>
+          </div>
+          <figcaption>תכנון תא הטייס</figcaption>
+        </figure>
+        <figure class="gallery__item card" data-reveal>
+          <div class="render render--scan">
+            <canvas data-pointcloud aria-hidden="true"></canvas>
+            <span class="render__tag render__tag--tl" dir="ltr" aria-hidden="true">3D SCAN · <b data-pointcloud-count>0</b> PTS</span>
+          </div>
+          <figcaption>סריקה תלת-ממדית של המטוס</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 TECHNOLOGY ============ -->
+<section class="section" id="tech" data-section="tech">
+  <div class="container">
+    <header class="section__head" data-reveal-group>
+      <p class="eyebrow" data-reveal>
+        <span class="eyebrow__idx" dir="ltr" aria-hidden="true">03</span>
+        <span class="eyebrow__label">טכנולוגיה</span>
+        <span class="eyebrow__en" dir="ltr" aria-hidden="true" data-scramble>TECHNOLOGY</span>
+      </p>
+      <h2 class="section__title" data-reveal>פלטפורמה בפיתוח עצמי, מהארכיטקטורה ועד עמדת המדריך.</h2>
+    </header>
+
+    <div class="tech" data-tech>
+      <div class="tech__points">
+        <article class="point card" data-tech-point data-spotlight>
+          <span class="point__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg>
+          </span>
+          <div>
+            <h3>שליטה בכל שכבה</h3>
+            <p>אנחנו מפתחים בעצמנו את ליבת המערכת, ולכן יכולים לשנות, להרחיב ולהתאים.</p>
+          </div>
+        </article>
+        <article class="point card" data-tech-point data-spotlight>
+          <span class="point__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          </span>
+          <div>
+            <h3>שילוב מלא של חומרה ותוכנה</h3>
+            <p>מערכות תצוגה, בקרים, מחשוב ותקשורת משתלבים יחד במאמן אחד, מותאם לכל כלי טיס, ממטוסי הדרכה ועד מטוסי קרב.</p>
+          </div>
+        </article>
+        <article class="point card point--hl" data-tech-point data-spotlight>
+          <span class="point__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/><rect x="7" y="7" width="10" height="10" rx="2"/></svg>
+          </span>
+          <div>
+            <h3>שילוב המערכות הייחודיות של הלקוח</h3>
+            <p>אנחנו יודעים לשלב במאמן את המערכות הייחודיות של הלקוח, כך שהאימון משקף את התצורה המבצעית המלאה.</p>
+          </div>
+        </article>
+        <article class="point card" data-tech-point data-spotlight>
+          <span class="point__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M2 10c0-2 1.5-3 3-3h14c1.5 0 3 1 3 3v3c0 2-1.5 3-3 3h-3l-2-2h-4l-2 2H5c-1.5 0-3-1-3-3z"/></svg>
+          </span>
+          <div>
+            <h3>מציאות מדומה ומעורבת</h3>
+            <p>תא טייס פיזי לצד עולם מדומה, כחלופה או כהשלמה למאמן קלאסי, לפי צורכי המשימה.</p>
+          </div>
+        </article>
+      </div>
+
+      <figure class="tech__media card" data-reveal>
+        <div class="render render--room" data-draw>
+          <svg class="render__svg" viewBox="0 0 900 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="direction:ltr">
+<line class="g" x1="450" y1="120" x2="34.3" y2="360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="502" y1="150" x2="86.3" y2="390" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="553.9" y1="180" x2="138.2" y2="420" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="605.9" y1="210" x2="190.2" y2="450" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="657.8" y1="240" x2="242.2" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="709.8" y1="270" x2="294.1" y2="510" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="761.8" y1="300" x2="346.1" y2="540" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="813.7" y1="330" x2="398" y2="570" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="865.7" y1="360" x2="450" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="917.7" y1="390" x2="502" y2="630" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="969.6" y1="420" x2="553.9" y2="660" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="450" y1="120" x2="969.6" y2="420" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="398" y1="150" x2="917.7" y2="450" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="346.1" y1="180" x2="865.7" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="294.1" y1="210" x2="813.7" y2="510" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="242.2" y1="240" x2="761.8" y2="540" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="190.2" y1="270" x2="709.8" y2="570" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="138.2" y1="300" x2="657.8" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="86.3" y1="330" x2="605.9" y2="630" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="34.3" y1="360" x2="553.9" y2="660" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s2" points="450,120 969.6,420 553.9,660 34.3,360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="544.4" y1="240.5" x2="354.7" y2="475" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="752.2" y1="360.5" x2="354.7" y2="475" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="397.2" y1="325.5" x2="354.7" y2="475" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="605" y1="445.5" x2="354.7" y2="475" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="dot" cx="354.7" cy="475" r="4" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="479.4,203 609.3,278 609.3,208 479.4,133" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="614.5,275 609.3,278 609.3,208 614.5,205" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="484.6,130 614.5,205 609.3,208 479.4,133" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="486.4,197 602.4,264 602.4,212 486.4,145" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="429.2,284 469.1,307 469.1,285 429.2,262" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="508.9,284 469.1,307 469.1,285 508.9,262" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="469.1,239 508.9,262 469.1,285 429.2,262" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="429.2,262 469.1,285 469.1,245 429.2,222" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="476,281 469.1,285 469.1,245 476,241" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="436.1,218 476,241 469.1,245 429.2,222" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="467.3" cy="215" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="467.3" y1="221" x2="467.3" y2="237" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="491.6" y="196" text-anchor="start">ST-01</text>
+<polygon class="f s" points="332.2,288 462.1,363 462.1,293 332.2,218" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="467.3,360 462.1,363 462.1,293 467.3,290" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="337.4,215 467.3,290 462.1,293 332.2,218" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="339.1,282 455.2,349 455.2,297 339.1,230" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="282,369 321.8,392 321.8,370 282,347" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="361.7,369 321.8,392 321.8,370 361.7,347" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="321.8,324 361.7,347 321.8,370 282,347" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="282,347 321.8,370 321.8,330 282,307" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="328.8,366 321.8,370 321.8,330 328.8,326" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="288.9,303 328.8,326 321.8,330 282,307" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="320.1" cy="300" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="320.1" y1="306" x2="320.1" y2="322" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="344.3" y="281" text-anchor="start">ST-03</text>
+<polygon class="f s" points="687.3,323 817.2,398 817.2,328 687.3,253" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="822.4,395 817.2,398 817.2,328 822.4,325" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="692.5,250 822.4,325 817.2,328 687.3,253" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="694.2,317 810.3,384 810.3,332 694.2,265" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="637.1,404 676.9,427 676.9,405 637.1,382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="716.7,404 676.9,427 676.9,405 716.7,382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="676.9,359 716.7,382 676.9,405 637.1,382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="637.1,382 676.9,405 676.9,365 637.1,342" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="683.8,401 676.9,405 676.9,365 683.8,361" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="644,338 683.8,361 676.9,365 637.1,342" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="675.2" cy="335" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="675.2" y1="341" x2="675.2" y2="357" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="699.4" y="316" text-anchor="start">ST-02</text>
+<polygon class="f s" points="540.1,408 670,483 670,413 540.1,338" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="675.2,480 670,483 670,413 675.2,410" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="545.3,335 675.2,410 670,413 540.1,338" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="547,402 663,469 663,417 547,350" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="489.8,489 529.7,512 529.7,490 489.8,467" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="569.5,489 529.7,512 529.7,490 569.5,467" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="529.7,444 569.5,467 529.7,490 489.8,467" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="489.8,467 529.7,490 529.7,450 489.8,427" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="536.6,486 529.7,490 529.7,450 536.6,446" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="496.8,423 536.6,446 529.7,450 489.8,427" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="527.9" cy="420" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="527.9" y1="426" x2="527.9" y2="442" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="552.2" y="401" text-anchor="start">ST-04</text>
+<polygon class="f s2" points="242.2,440 415.4,540 415.4,508 242.2,408" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="467.3,510 415.4,540 415.4,508 467.3,478" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="294.1,378 467.3,478 415.4,508 242.2,408" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="299.3,395 359.9,430 359.9,388 299.3,353" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="363.4,428 359.9,430 359.9,388 363.4,386" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="302.8,351 363.4,386 359.9,388 299.3,353" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="377.3,440 437.9,475 437.9,433 377.3,398" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="441.3,473 437.9,475 437.9,433 441.3,431" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="380.7,396 441.3,431 437.9,433 377.3,398" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="227.5" y="461" text-anchor="start">INSTRUCTOR · IOS</text>
+<text class="lbl" x="40" y="560" text-anchor="start">MIXED REALITY CLASSROOM · 4 STATIONS + IOS</text>
+<text class="lbl" x="860" y="560" text-anchor="end">ISO 30°</text>
+</svg>
+        </div>
+        <span class="render__tag render__tag--tl hud-label" dir="ltr" aria-hidden="true"><i class="pulse"></i><b data-tech-label>LAYER 01</b></span>
+        <figcaption>כיתת אימון במציאות מעורבת · הדמיה</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 AVAILABILITY ============ -->
+<section class="section section--alt" id="availability" data-section="availability">
+  <div class="container">
+    <header class="section__head" data-reveal-group>
+      <p class="eyebrow" data-reveal>
+        <span class="eyebrow__idx" dir="ltr" aria-hidden="true">04</span>
+        <span class="eyebrow__label">זמינות</span>
+        <span class="eyebrow__en" dir="ltr" aria-hidden="true" data-scramble>AVAILABILITY</span>
+      </p>
+      <h2 class="section__title" data-reveal>מאמן טוב נמדד ביום שהוא זמין.</h2>
+      <p class="lead" data-reveal>אחזקה, ניהול תצורה ותמיכה תפעולית מלאה לאורך כל חיי המערכת.</p>
+    </header>
+
+    <div class="stats" data-reveal-group>
+      <div class="stat card" data-reveal data-spotlight>
+        <span class="stat__val stat__val--word">מאות אלפי</span>
+        <span class="stat__k">גיחות אימון</span>
+        <p>שבוצעו על המערכות שלנו.</p>
+      </div>
+      <div class="stat stat--hl card" data-reveal data-spotlight>
+        <span class="stat__val" dir="ltr"><span data-count="99.7" data-decimals="1">99.7</span><small>%</small></span>
+        <span class="stat__k">זמינות</span>
+        <p>מהגיחות המתוכננות יצאו לפועל בלי ביטול בגלל תקלה במערכת.</p>
+        <div class="uptime" aria-hidden="true" data-uptime="336" data-uptime-down="1"></div>
+      </div>
+      <div class="stat card" data-reveal data-spotlight>
+        <span class="stat__val" dir="ltr"><span data-count="8">8</span></span>
+        <span class="stat__k">שנות הפעלה</span>
+        <p>של מערכות אימון בעומס יומיומי, עם אחזקה ותמיכה בבית.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 TEAM ============ -->
+<section class="section" id="team" data-section="team">
+  <div class="container">
+    <header class="section__head" data-reveal-group>
+      <p class="eyebrow" data-reveal>
+        <span class="eyebrow__idx" dir="ltr" aria-hidden="true">05</span>
+        <span class="eyebrow__label">הצוות</span>
+        <span class="eyebrow__en" dir="ltr" aria-hidden="true" data-scramble>TEAM</span>
+      </p>
+      <h2 class="section__title" data-reveal>האנשים שהובילו את חיל האוויר הישראלי מובילים את TST.</h2>
+      <p class="lead" data-reveal>בהנהלה ובצוות ההדרכה שלנו קצינים בכירים במילואים, בדרגות תת-אלוף ואלוף-משנה, עם מאות שנות ניסיון מצטבר בפיקוד, בהדרכה ובבניין הכוח. לצידם צוות פיתוח שבונה ומפעיל מאמני טיסה כבר שמונה שנים.</p>
+    </header>
+
+    <div class="team" data-reveal-group>
+      <article class="member card" data-reveal data-spotlight>
+        <div class="member__ini" aria-hidden="true"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" /><circle cx="40" cy="40" r="31" class="member__ring" /></svg><span>א.ב.</span></div>
+        <span class="member__rank">תת-אלוף (מיל')</span>
+        <p>שירת בתפקידי פיקוד בכירים בחיל האוויר. מוביל את פיתוח העסקים והאסטרטגיה.</p>
+      </article>
+      <article class="member card" data-reveal data-spotlight>
+        <div class="member__ini" aria-hidden="true"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" /><circle cx="40" cy="40" r="31" class="member__ring" /></svg><span>ג.ד.</span></div>
+        <span class="member__rank">אלוף-משנה (מיל')</span>
+        <p>שירת בתפקידי פיקוד והדרכה במערך הטיסה. מוביל את תפיסות ההדרכה.</p>
+      </article>
+      <article class="member card" data-reveal data-spotlight>
+        <div class="member__ini" aria-hidden="true"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" /><circle cx="40" cy="40" r="31" class="member__ring" /></svg><span>ה.ו.</span></div>
+        <span class="member__rank">מנהל טכנולוגיות</span>
+        <p>ניסיון רב בפיתוח מערכות סימולציה ושילוב מערכות. מוביל את פיתוח הפלטפורמה.</p>
+      </article>
+    </div>
+    <p class="sample-note" data-reveal>ראשי התיבות והתיאורים הם דוגמה בלבד</p>
+
+    <blockquote class="quote" data-reveal>
+      <p>אנחנו לא שחקן זר שלומד את השפה. <b>חיינו במשך שנים את עולם ההדרכה, התעופה והדרישות המבצעיות.</b></p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ 06 CONTACT ============ -->
+<section class="section section--contact" id="contact" data-section="contact">
+  <div class="container">
+    <div class="contact card" data-reveal>
+      <div class="contact__intro">
+        <p class="eyebrow">
+          <span class="eyebrow__idx" dir="ltr" aria-hidden="true">06</span>
+          <span class="eyebrow__label">צרו קשר</span>
+          <span class="eyebrow__en" dir="ltr" aria-hidden="true" data-scramble>CONTACT</span>
+        </p>
+        <h2 class="section__title">מתכננים את מערך האימון הבא שלכם? בואו נדבר.</h2>
+        <p class="lead">נשמח להציג לכם הדגמה של הפלטפורמה, אצלכם או אצלנו.</p>
+
+        <dl class="direct">
+          <div>
+            <dt>דואר אלקטרוני</dt>
+            <dd><a href="mailto:info@example.co.il" dir="ltr" data-track="contact_click" data-label="email">info@example.co.il</a></dd>
+          </div>
+          <div>
+            <dt>טלפון</dt>
+            <dd><a href="tel:+97230000000" dir="ltr" data-track="contact_click" data-label="phone">03-000-0000</a></dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="form" id="contact-form" novalidate data-form>
+        <div class="form__row">
+          <div class="field">
+            <label for="f-name">שם מלא</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+            <p class="field__err" id="e-name" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-org">ארגון</label>
+            <input id="f-org" name="organization" type="text" autocomplete="organization" required aria-describedby="e-org">
+            <p class="field__err" id="e-org" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label for="f-mail">דואר אלקטרוני</label>
+            <input id="f-mail" name="email" type="email" autocomplete="email" inputmode="email" dir="ltr" required aria-describedby="e-mail">
+            <p class="field__err" id="e-mail" aria-live="polite"></p>
+          </div>
+          <div class="field field--select">
+            <label for="f-topic">נושא הפנייה</label>
+            <select id="f-topic" name="topic">
+              <option>הדגמת הפלטפורמה</option>
+              <option>מרכז אימון חדש</option>
+              <option>שילוב בפרויקט קיים</option>
+              <option>אחר</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-msg">הודעה</label>
+          <textarea id="f-msg" name="message" rows="4"></textarea>
+        </div>
+        <!-- Honeypot: hidden from humans, bots fill it. -->
+        <div class="hp" aria-hidden="true"><label for="f-company">Company</label><input id="f-company" name="_company" type="text" tabindex="-1" autocomplete="off"></div>
+
+        <div class="form__foot">
+          <button class="btn btn--primary btn--lg" type="submit" data-magnetic data-submit>
+            <span class="btn__label">שליחת פנייה</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form__note">הפרטים משמשים למענה לפנייה בלבד.</p>
+        </div>
+        <p class="form__status" role="status" aria-live="polite" data-form-status hidden></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="logo__text" dir="ltr"><b>TST</b><small>THE SQUADRON TECHNOLOGY</small></span>
+      <p>TST · The Squadron Technology</p>
+    </div>
+    <nav class="footer__nav" aria-label="ניווט תחתון">
+      <a href="#solution">הפתרון</a>
+      <a href="#trainers">המאמנים שלנו</a>
+      <a href="#tech">טכנולוגיה</a>
+      <a href="#availability">זמינות</a>
+      <a href="#team">הצוות</a>
+      <a href="#contact">צרו קשר</a>
+    </nav>
+    <div class="footer__meta">
+      <p>אתר לדוגמה · הפרטים להמחשה בלבד</p>
+      <a class="totop" href="#top" aria-label="חזרה לראש הדף">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CONSENT (shown only when GA is configured) ============ -->
+<div class="consent" id="consent" hidden data-consent role="dialog" aria-labelledby="consent-title" aria-describedby="consent-desc">
+  <p id="consent-title" class="consent__title">מדידת שימוש באתר</p>
+  <p id="consent-desc">אנחנו משתמשים ב-Google Analytics כדי להבין איך משתמשים באתר ולשפר אותו. אפשר לאשר או לדחות בכל עת.</p>
+  <div class="consent__actions">
+    <button class="btn btn--primary btn--sm" type="button" data-consent-accept>אישור</button>
+    <button class="btn btn--ghost btn--sm" type="button" data-consent-decline>לא תודה</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+<script src="../assets/js/hud.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
+</body>
+</html>

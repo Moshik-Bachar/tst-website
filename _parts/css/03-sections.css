@@ -1,0 +1,114 @@
+
+/* ---------- 7. Sections ---------- */
+.section { position: relative; padding-block: var(--section); }
+.section--alt {
+  background:
+    radial-gradient(60% 50% at 80% 0%, rgba(92,200,255,.06), transparent 70%),
+    linear-gradient(180deg, var(--bg-1), var(--bg) 85%);
+  border-block: 1px solid var(--line-soft);
+}
+.section--alt::before { /* soft atmospheric glow instead of a grid */
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(50% 40% at 20% 20%, rgba(92,200,255,.05), transparent 70%);
+}
+.section > .container { position: relative; }
+.section__head { display: grid; gap: 18px; max-width: 820px; margin-bottom: clamp(44px, 6vw, 72px); }
+.section__title { font-size: clamp(30px, 4.2vw, 54px); font-weight: 700; letter-spacing: -.02em; line-height: 1.12; }
+.section__title::after { content: ""; display: block; width: 56px; height: 2px; margin-top: 22px; background: linear-gradient(270deg, var(--accent), transparent); }
+
+/* ---------- 8. Chain / process timeline ---------- */
+.chain-wrap { position: relative; padding-top: 34px; }
+.chain__track { position: absolute; top: 20px; inset-inline: 8%; height: 1px; background: var(--line); }
+.chain__track i { position: absolute; inset-block: -0.5px; inset-inline-start: 0; width: 100%; background: linear-gradient(270deg, var(--accent), var(--accent-2)); transform-origin: right; transform: scaleX(0); box-shadow: 0 0 12px var(--accent-glow); }
+.chain { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.chain__step {
+  position: relative; display: grid; gap: 10px; align-content: start; padding: 28px 22px 26px;
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  border: 1px solid var(--line); border-radius: var(--r);
+  transition: border-color .5s, background-color .5s, transform .6s var(--ease-out);
+}
+.chain__step--opt { border-style: dashed; }
+.chain__node { position: absolute; top: -21px; left: 50%; translate: -50% 0; width: 11px; height: 11px; border-radius: 50%; background: var(--bg); border: 1px solid var(--muted-2); transition: background-color .4s, border-color .4s, box-shadow .4s; }
+.chain__step.is-lit .chain__node { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-dim), 0 0 18px var(--accent-glow); }
+.chain__step.is-lit { border-color: var(--line-strong); }
+.chain__n { font-size: 12px; color: var(--accent); }
+.chain__step h3 { font-size: 21px; font-weight: 600; }
+.chain__step p { font-size: 15px; color: var(--muted); line-height: 1.6; }
+.chain__step .tag { margin-top: 6px; color: var(--amber); border-color: rgba(255,181,71,.4); background: rgba(255,181,71,.08); }
+
+/* ---------- 9. Renders (technical SVG / canvas figures) ---------- */
+.render { position: relative; width: 100%; height: 100%; overflow: hidden;
+  background: radial-gradient(120% 90% at 70% 0%, #112637 0%, var(--bg-2) 55%, var(--bg-1) 100%); }
+.render::after { /* vignette + scanline sheen */
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(80% 80% at 50% 50%, transparent 55%, rgba(7,11,16,.55) 100%);
+}
+.render__svg { width: 100%; height: 100%; }
+.render--plan .render__svg, .render--iso .render__svg, .render--room .render__svg { padding: 4%; }
+.render .s  { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.render .s2 { fill: none; stroke: var(--muted); stroke-width: 1; stroke-linejoin: round; stroke-linecap: round; }
+.render .s3 { fill: none; stroke: var(--accent-2); stroke-width: 3; stroke-linecap: round; }
+.render .d  { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 6; opacity: .8; }
+.render .g  { fill: none; stroke: rgba(150,180,205,.12); stroke-width: 1; }
+.render .f  { fill: rgba(13,20,28,.92); }
+.render .f.s { fill: rgba(17,26,36,.95); }
+.render .scr { fill: rgba(92,200,255,.10); stroke: var(--accent); stroke-width: 1; }
+.render .lbl { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; fill: var(--muted); }
+.render .dot { fill: var(--accent); stroke: none; }
+.render__tag {
+  position: absolute; inset-inline-end: 16px; bottom: 14px; z-index: 2;
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 10px; color: var(--muted); letter-spacing: .14em;
+  padding: 5px 10px; border: 1px solid var(--line); border-radius: 6px; background: rgba(7,11,16,.6); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+}
+.render__tag--tl { inset-inline-end: auto; inset-inline-start: 16px; bottom: auto; top: 14px; }
+.render__tag b { font-weight: 500; color: var(--accent-2); }
+.hud-label { color: var(--accent); border-color: var(--line-strong); }
+
+/* draw-on animation: paths start hidden only when JS can animate them */
+html.has-anim [data-draw] .s, html.has-anim [data-draw] .s2, html.has-anim [data-draw] .s3, html.has-anim [data-draw] .d, html.has-anim [data-draw] .scr {
+  stroke-dasharray: 1; stroke-dashoffset: 1;
+}
+html.has-anim [data-draw].is-drawn .s, html.has-anim [data-draw].is-drawn .s2, html.has-anim [data-draw].is-drawn .s3, html.has-anim [data-draw].is-drawn .d, html.has-anim [data-draw].is-drawn .scr {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 2.4s var(--ease-io);
+}
+html.has-anim [data-draw] .d { stroke-dasharray: 1; }
+html.has-anim [data-draw].is-drawn .d { stroke-dasharray: 4 6; transition: stroke-dashoffset 2.4s var(--ease-io), stroke-dasharray 0s 2.4s; }
+html.has-anim [data-draw] .lbl { opacity: 0; transition: opacity .8s 1.6s; }
+html.has-anim [data-draw].is-drawn .lbl { opacity: 1; }
+/* already scrolled past (anchor jump): finish instantly, no off-screen animation */
+html.has-anim [data-draw].is-instant *, html.has-anim [data-draw].is-instant .d { transition: none !important; }
+.uptime.is-instant span { transition: none !important; }
+
+/* ---------- 10. Banner: live cockpit view bleeding under the copy ---------- */
+.banner { position: relative; margin: 22px 0 0; display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.3fr); min-height: 500px;
+  border: 1px solid var(--line-strong); border-radius: var(--r-lg); overflow: hidden; background: var(--bg-1); isolation: isolate; }
+.banner__media { position: absolute; inset: 0; overflow: hidden; z-index: 0; }
+.banner__media .render { position: absolute; inset: -6% 0; height: 112%; }
+.render__live { position: absolute; inset: 0; width: 100%; height: 100%; }
+.banner__scrim { position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(270deg, rgba(7,11,16,.97) 0%, rgba(7,11,16,.9) 30%, rgba(7,11,16,.45) 52%, rgba(7,11,16,0) 72%),
+    linear-gradient(180deg, rgba(7,11,16,.25), transparent 30%, transparent 75%, rgba(7,11,16,.5)); }
+.hud-corners { position: absolute; inset: 14px; pointer-events: none; }
+.hud-corners::before, .hud-corners::after { content: ""; position: absolute; width: 20px; height: 20px; border: 1px solid var(--accent); opacity: .7; }
+.hud-corners::before { inset-inline-start: 0; top: 0; border-inline-end: 0; border-bottom: 0; }
+.hud-corners::after { inset-inline-end: 0; bottom: 0; border-inline-start: 0; border-top: 0; }
+.render__tag--live { color: var(--accent); border-color: var(--line-strong); }
+.banner__text { position: relative; z-index: 1; grid-column: 1; display: grid; gap: 16px; align-content: center; padding: clamp(28px, 4vw, 56px); }
+.banner__text h3 { font-size: clamp(22px, 2.4vw, 32px); font-weight: 700; letter-spacing: -.01em; }
+.banner__text > p:not(.eyebrow) { color: var(--fg-2); font-weight: 300; }
+
+/* briefing → training → debrief flow */
+.flow { display: flex; align-items: center; gap: 10px; margin-top: 10px; padding-top: 22px; border-top: 1px solid var(--line-soft); }
+.flow__node { display: grid; gap: 2px; justify-items: center; padding: 9px 14px; border: 1px solid var(--line); border-radius: 10px; background: rgba(7,11,16,.6); min-width: 86px; }
+.flow__node b { font-weight: 600; font-size: 14px; }
+.flow__node small { font-family: var(--font-mono); font-size: 9px; letter-spacing: .14em; color: var(--muted-2); }
+.flow__node--hl { border-color: var(--line-strong); background: var(--accent-dim); }
+.flow__node--hl small { color: var(--accent); }
+.flow__line { position: relative; flex: 1 1 24px; height: 1px; background: var(--line-strong); overflow: visible; }
+.flow__line em { position: absolute; top: -2.5px; inset-inline-start: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-2); box-shadow: 0 0 10px var(--accent-glow); animation: flowDot 2.6s linear infinite; }
+.flow__line--2 em { animation-name: flowDot2; }
+@keyframes flowDot  { 0% { inset-inline-start: 0; opacity: 0; } 6% { opacity: 1; } 44% { opacity: 1; } 50%, 100% { inset-inline-start: calc(100% - 6px); opacity: 0; } }
+@keyframes flowDot2 { 0%, 50% { inset-inline-start: 0; opacity: 0; } 56% { opacity: 1; } 94% { opacity: 1; } 100% { inset-inline-start: calc(100% - 6px); opacity: 0; } }

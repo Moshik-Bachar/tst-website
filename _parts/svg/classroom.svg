@@ -1,0 +1,92 @@
+<svg class="render__svg" viewBox="0 0 900 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false" style="direction:ltr">
+<line class="g" x1="450" y1="120" x2="34.3" y2="360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="502" y1="150" x2="86.3" y2="390" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="553.9" y1="180" x2="138.2" y2="420" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="605.9" y1="210" x2="190.2" y2="450" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="657.8" y1="240" x2="242.2" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="709.8" y1="270" x2="294.1" y2="510" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="761.8" y1="300" x2="346.1" y2="540" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="813.7" y1="330" x2="398" y2="570" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="865.7" y1="360" x2="450" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="917.7" y1="390" x2="502" y2="630" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="969.6" y1="420" x2="553.9" y2="660" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="450" y1="120" x2="969.6" y2="420" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="398" y1="150" x2="917.7" y2="450" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="346.1" y1="180" x2="865.7" y2="480" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="294.1" y1="210" x2="813.7" y2="510" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="242.2" y1="240" x2="761.8" y2="540" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="190.2" y1="270" x2="709.8" y2="570" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="138.2" y1="300" x2="657.8" y2="600" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="86.3" y1="330" x2="605.9" y2="630" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="g" x1="34.3" y1="360" x2="553.9" y2="660" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s2" points="450,120 969.6,420 553.9,660 34.3,360" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="544.4" y1="240.5" x2="354.7" y2="475" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="752.2" y1="360.5" x2="354.7" y2="475" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="397.2" y1="325.5" x2="354.7" y2="475" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="d" x1="605" y1="445.5" x2="354.7" y2="475" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="dot" cx="354.7" cy="475" r="4" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="479.4,203 609.3,278 609.3,208 479.4,133" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="614.5,275 609.3,278 609.3,208 614.5,205" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="484.6,130 614.5,205 609.3,208 479.4,133" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="486.4,197 602.4,264 602.4,212 486.4,145" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="429.2,284 469.1,307 469.1,285 429.2,262" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="508.9,284 469.1,307 469.1,285 508.9,262" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="469.1,239 508.9,262 469.1,285 429.2,262" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="429.2,262 469.1,285 469.1,245 429.2,222" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="476,281 469.1,285 469.1,245 476,241" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="436.1,218 476,241 469.1,245 429.2,222" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="467.3" cy="215" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="467.3" y1="221" x2="467.3" y2="237" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="491.6" y="196" text-anchor="start">ST-01</text>
+<polygon class="f s" points="332.2,288 462.1,363 462.1,293 332.2,218" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="467.3,360 462.1,363 462.1,293 467.3,290" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="337.4,215 467.3,290 462.1,293 332.2,218" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="339.1,282 455.2,349 455.2,297 339.1,230" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="282,369 321.8,392 321.8,370 282,347" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="361.7,369 321.8,392 321.8,370 361.7,347" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="321.8,324 361.7,347 321.8,370 282,347" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="282,347 321.8,370 321.8,330 282,307" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="328.8,366 321.8,370 321.8,330 328.8,326" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="288.9,303 328.8,326 321.8,330 282,307" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="320.1" cy="300" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="320.1" y1="306" x2="320.1" y2="322" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="344.3" y="281" text-anchor="start">ST-03</text>
+<polygon class="f s" points="687.3,323 817.2,398 817.2,328 687.3,253" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="822.4,395 817.2,398 817.2,328 822.4,325" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="692.5,250 822.4,325 817.2,328 687.3,253" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="694.2,317 810.3,384 810.3,332 694.2,265" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="637.1,404 676.9,427 676.9,405 637.1,382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="716.7,404 676.9,427 676.9,405 716.7,382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="676.9,359 716.7,382 676.9,405 637.1,382" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="637.1,382 676.9,405 676.9,365 637.1,342" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="683.8,401 676.9,405 676.9,365 683.8,361" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="644,338 683.8,361 676.9,365 637.1,342" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="675.2" cy="335" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="675.2" y1="341" x2="675.2" y2="357" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="699.4" y="316" text-anchor="start">ST-02</text>
+<polygon class="f s" points="540.1,408 670,483 670,413 540.1,338" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="675.2,480 670,483 670,413 675.2,410" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="545.3,335 675.2,410 670,413 540.1,338" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="scr" points="547,402 663,469 663,417 547,350" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="489.8,489 529.7,512 529.7,490 489.8,467" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="569.5,489 529.7,512 529.7,490 569.5,467" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="529.7,444 569.5,467 529.7,490 489.8,467" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="489.8,467 529.7,490 529.7,450 489.8,427" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="536.6,486 529.7,490 529.7,450 536.6,446" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="496.8,423 536.6,446 529.7,450 489.8,427" pathLength="1" vector-effect="non-scaling-stroke"/>
+<circle class="s" cx="527.9" cy="420" r="6" pathLength="1" vector-effect="non-scaling-stroke"/>
+<line class="s2" x1="527.9" y1="426" x2="527.9" y2="442" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="552.2" y="401" text-anchor="start">ST-04</text>
+<polygon class="f s2" points="242.2,440 415.4,540 415.4,508 242.2,408" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s2" points="467.3,510 415.4,540 415.4,508 467.3,478" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="294.1,378 467.3,478 415.4,508 242.2,408" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="299.3,395 359.9,430 359.9,388 299.3,353" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="363.4,428 359.9,430 359.9,388 363.4,386" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="302.8,351 363.4,386 359.9,388 299.3,353" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="377.3,440 437.9,475 437.9,433 377.3,398" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="f s" points="441.3,473 437.9,475 437.9,433 441.3,431" pathLength="1" vector-effect="non-scaling-stroke"/>
+<polygon class="s" points="380.7,396 441.3,431 437.9,433 377.3,398" pathLength="1" vector-effect="non-scaling-stroke"/>
+<text class="lbl" x="227.5" y="461" text-anchor="start">INSTRUCTOR · IOS</text>
+<text class="lbl" x="40" y="560" text-anchor="start">MIXED REALITY CLASSROOM · 4 STATIONS + IOS</text>
+<text class="lbl" x="860" y="560" text-anchor="end">ISO 30°</text>
+</svg>

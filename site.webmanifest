@@ -1,0 +1,14 @@
+{
+  "name": "TST · The Squadron Technology",
+  "short_name": "TST",
+  "description": "Flight simulators and training centers — planning, construction, development, operation and instruction.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070b10",
+  "theme_color": "#070b10",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

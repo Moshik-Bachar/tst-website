@@ -1,0 +1,42 @@
+
+/* ---------- 17b. Altimeter (scroll position as altitude) ----------
+   Fixed on the page's inline-end edge (left in RTL), desktop ≥1240px only.
+   The layout reserves a rail (--rail, see .container) so cards never run
+   under the tape; narrower desktops and phones keep the thin progress bar. */
+@media (min-width: 1240px) { :root { --rail: 132px; } }
+.altimeter {
+  position: fixed; inset-inline-end: 22px; top: 50%; translate: 0 -50%; z-index: 40;
+  width: 84px; height: min(62vh, 600px);
+  font-family: var(--font-mono); letter-spacing: .06em;
+}
+.altimeter > * { direction: ltr; }   /* instrument text is LTR; the root keeps page direction so inset-inline-end means the free edge */
+.altimeter__cap, .altimeter__sec { position: absolute; left: 0; right: 0; text-align: left; font-size: 9px; letter-spacing: .16em; color: var(--muted-2); white-space: nowrap; }
+.altimeter__cap { top: -24px; }
+.altimeter__sec { bottom: -24px; color: var(--muted); }
+.altimeter__window { position: absolute; inset: 0; overflow: hidden;
+  -webkit-mask-image: linear-gradient(transparent, #000 16%, #000 84%, transparent); mask-image: linear-gradient(transparent, #000 16%, #000 84%, transparent); }
+.altimeter__window::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--line-strong); }
+.altimeter__strip { position: absolute; left: 0; right: 0; top: 0; will-change: transform;
+  background:
+    repeating-linear-gradient(to bottom, rgba(92,200,255,.6) 0 1px, transparent 1px 120px) left 0 top 0 / 14px 100% no-repeat,
+    repeating-linear-gradient(to bottom, rgba(150,180,205,.32) 0 1px, transparent 1px 24px) left 0 top 0 / 7px 100% no-repeat; }
+.altimeter__strip > span { position: absolute; left: 20px; translate: 0 -50%; font-size: 10px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.altimeter__mark { position: absolute; left: 0; translate: 0 -50%; display: flex; flex-direction: row-reverse; align-items: center; gap: 7px; padding: 5px 6px 5px 0; background: var(--bg); color: var(--accent); font-size: 9px; text-decoration: none; transition: color .25s; }
+.altimeter__mark i { display: block; width: 22px; height: 1px; background: var(--accent); box-shadow: 0 0 8px var(--accent-glow); transition: width .25s; }
+.altimeter__mark:hover, .altimeter__mark:focus-visible { color: var(--accent-2); }
+.altimeter__mark:hover i { width: 30px; }
+.altimeter__mark.is-current { color: var(--accent-2); }
+.altimeter__mark.is-current i { width: 30px; background: var(--accent-2); }
+.altimeter__readout {
+  position: absolute; left: 18px; top: 50%; translate: 0 -50%; display: flex; align-items: baseline; gap: 5px;
+  padding: 5px 9px; border: 1px solid var(--line-strong); border-radius: 4px;
+  background: rgba(7,11,16,.92); color: var(--accent-2); font-size: 12px; font-weight: 500; white-space: nowrap;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,.8);
+}
+.altimeter__readout::before { content: ""; position: absolute; left: -18px; top: 50%; width: 18px; height: 1px; background: var(--accent); }
+.altimeter__readout::after { content: ""; position: absolute; left: -7px; top: 50%; translate: 0 -50%; border: 6px solid transparent; border-right-color: var(--accent); border-left: 0; }
+.altimeter__readout b { font-weight: 500; font-variant-numeric: tabular-nums; min-width: 5.2ch; text-align: right; }
+.altimeter__readout small { font-size: 9px; color: var(--muted); }
+html.has-anim .altimeter { opacity: 0; }
+@media (max-width: 1239px) { .altimeter { display: none; } }
+@media (min-width: 1240px) { .progress { display: none; } }

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_parts/
+Disallow: /_artifact/
+
+Sitemap: https://moshik-bachar.github.io/tst-website/sitemap.xml
