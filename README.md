@@ -38,7 +38,14 @@ Build (Python 3, no packages needed):
 python _parts/build.py
 ```
 
-Deploy the folder as-is to any static host (Netlify, Vercel, Cloudflare Pages, S3 + CloudFront, nginx). Exclude `_parts/` from the deploy or leave it; `robots.txt` already disallows it.
+**Live site:** https://moshik-bachar.github.io/tst-website/ (GitHub Pages, repository `Moshik-Bachar/tst-website`, branch `main`, root, Jekyll disabled by `.nojekyll`). To publish a change:
+
+```bash
+python _parts/build.py
+git add -A && git commit -m "Update site" && git push
+```
+
+Pages rebuilds in about a minute. `SITE_URL` at the top of `_parts/build.py` is the public address used for canonical, Open Graph, hreflang, sitemap and robots; when a custom domain is attached (repository Settings → Pages → Custom domain, plus a CNAME record at the registrar), change `SITE_URL` and rebuild. The folder also deploys as-is to any other static host. A private claude.ai copy exists as well; see the project notes.
 
 ## Configuration (index.html, `window.TST_CONFIG`)
 
